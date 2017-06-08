@@ -1,15 +1,43 @@
 <!DOCTYPE>
 <html>
     <head>
-        <title>ionDesign</title>
+        <title>Ion</title>
 
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link href="ion.css" type="text/css" rel="stylesheet" />
     </head>
 
     <body>
-        <header>
+        <header class="toolbar fixed grey-900">
 
         </header>
+
+        <main class="container">
+
+            <section class="banner grey-900">
+                <div class="row">
+                    <div class="col-6 center">
+                        <figure>
+                            <img src="ion_logo.svg" />
+                        </figure>
+
+                        <p class="display-2">IonDesign</p>
+                        <p class="headline">O framework inspirado no Material Design.</p>
+
+                        <button class="button raised">INTRODUÇÃO</button>
+                    </div>
+                    <div class="col-6">
+                        <video width="100%" autoplay loop muted>
+                            <source src="intro.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                </div>
+            </section>
+
+        </main>
     </body>
+
+    <script src="ion.js"></script>
 </html>
