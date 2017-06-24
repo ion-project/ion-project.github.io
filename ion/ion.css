@@ -4,6 +4,7 @@ ionDesign - version 0.08.11
 
 version 0.08.11 2017-06-07
     - add .center class to layout section to center inline elements
+    - add .valign class to layout section to center vertically the element
     - fixed the container position after toolbar fixed element
 
 version 0.08.10 2017-05-18
@@ -168,13 +169,13 @@ body, button, input{
 
 @font-face{
     font-family: "Material Icons";
-    src: url(material-icons.eot);
+    src: url(fonts/material-icons.eot);
     src: local("Material Icons"),
          local("MaterialIcons-Regular"),
-         url(material-icons.woff2) format("woff2"),
-         url(material-icons.woff) format("woff"),
-         url(material-icons.ttf) format("truetype"),
-         url(material-icons.ijmap) format("ijmap");
+         url(fonts/material-icons.woff2) format("woff2"),
+         url(fonts/material-icons.woff) format("woff"),
+         url(fonts/material-icons.ttf) format("truetype"),
+         url(fonts/material-icons.ijmap) format("ijmap");
 }
 .icon, .expansion-panel .item::after{
     font-family: "Material Icons";
@@ -1104,6 +1105,9 @@ body, button, input{
 .center{
     text-align: center;
 }
+.valign{
+    align-items: center;
+}
 .row{
     padding: 4px;
     display: flex;
@@ -1301,7 +1305,7 @@ button{
 .text-field, .text-field > div, .searchbar.fixed .search-field{
     position: relative;
 }
-.text-field, .searchbar.fixed .search-field, .searchbar.centered, .chips, .chips > .content{
+.text-field, .searchbar.fixed .search-field, .searchbar.centered, .chips, .chips > .content, .valign{
     display: flex;
 }
 .text-field > div, .text-field input{
@@ -1725,6 +1729,7 @@ ul.list, ol.list{
 
 .tooltip{
     opacity: 0;
+    z-index: 6;
     font-size: 10px;
     font-weight: 500;
     position: absolute;
@@ -1740,11 +1745,11 @@ ul.list, ol.list{
 }
 .tooltip.left{
     margin-left: -14px;
-    border-radius: 25% 0px 0px 25%;
+    border-radius: 25px 0px 0px 22px;
 }
 .tooltip.right{
     margin-left: 14px;
-    border-radius: 0px 25% 25% 0px;
+    border-radius: 0px 22px 22px 0px;
 }
 .tooltip.bottom{
     margin-top: 14px;

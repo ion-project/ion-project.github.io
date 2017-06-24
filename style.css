@@ -1,0 +1,22 @@
+.no-elevation{
+    box-shadow: none;
+}
+
+/* Toolbar */
+.toolbar .icon{
+    color: #FFFFFF;
+}
+
+/* Features */
+#features .icon{
+    font-size: 64px;
+}
+
+/* Docs */
+#docs .graphic{
+    text-align: right;
+}
+#docs .graphic img{
+    width: 50%;
+    text-align: right;
+}
