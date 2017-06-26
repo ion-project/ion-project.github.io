@@ -1,4 +1,9 @@
-IonDesign version 0.07b
+IonDesign version 0.09b
+
+version 0.09b 2017-06-25
+    - add motion duration & easing in css
+    - update event "on" function, now it returns the IonSelector reference
+    - fixed the bug with IonSelector reference
 
 version 0.08b 2017-06-22
     - add function to create custom events

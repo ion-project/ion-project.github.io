@@ -1038,6 +1038,33 @@ body, button, input{
 
 /* Motion */
 
+/* Duration & easing */
+
+.motion{
+    transition-property: all;
+}
+.motion.in{
+    transition-duration: 0.225s;
+}
+.motion.out{
+    transition-duration: 0.195s;
+}
+.motion.complex{
+    transition-duration: 0.375s;
+}
+.motion.standart{
+    transition-timing-function: cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+.motion.deceleration{
+    transition-timing-function: cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+.motion.acceleration{
+    transition-timing-function: cubic-bezier(0.4, 0.0, 1, 1);
+}
+.motion.sharp{
+    transition-timing-function: cubic-bezier(0.4, 0.0, 0.6, 1);
+}
+
 /* Ripple effect */
 
 .ripple, .button, .radial, .tab, .tabs .indicator{
