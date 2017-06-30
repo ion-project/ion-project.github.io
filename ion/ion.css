@@ -1947,6 +1947,9 @@ ul.list, ol.list{
     transform: translateX(0%);
     transition: transform 0.225s cubic-bezier(0.0, 0.0, 0.2, 1);
 }
+.navbar.open ~ .container{
+    margin-left: 256px;
+}
 .navbar .list .item:hover{
     background-color: rgba(0, 0, 0, 0.12);
 }
