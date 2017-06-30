@@ -34,6 +34,9 @@ pre[class*="language-"] {
 	overflow: auto;
 	border-radius: 2px;
 }
+pre[class*="language-"] > code{
+	margin-left: -48px;
+}
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
