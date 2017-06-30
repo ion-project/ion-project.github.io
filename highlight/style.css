@@ -9,8 +9,8 @@ code[class*="language-"],
 pre[class*="language-"] {
 	color: #f8f8f2;
 	background: none;
-	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
-	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 14px;
+	font-family: "RobotoDraft", sans-serif;
 	text-align: left;
 	white-space: pre;
 	word-spacing: normal;
@@ -30,21 +30,19 @@ pre[class*="language-"] {
 
 /* Code blocks */
 pre[class*="language-"] {
-	padding: 1em;
-	margin: .5em 0;
+	padding: 16px 16px 0px 16px;
 	overflow: auto;
-	border-radius: 0.3em;
+	border-radius: 2px;
 }
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-	background: #272822;
+	background: #212121;
 }
 
 /* Inline code */
 :not(pre) > code[class*="language-"] {
-	padding: .1em;
-	border-radius: .3em;
+	border-radius: 2px;
 	white-space: normal;
 }
 
@@ -52,11 +50,11 @@ pre[class*="language-"] {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-	color: slategray;
+	color: rgba(255, 255, 255, 0.7);
 }
 
 .token.punctuation {
-	color: #f8f8f2;
+	color: rgba(255, 255, 255, 0.5);
 }
 
 .namespace {
@@ -68,7 +66,7 @@ pre[class*="language-"] {
 .token.constant,
 .token.symbol,
 .token.deleted {
-	color: #f92672;
+	color: #2C7CD6;
 }
 
 .token.boolean,
@@ -82,7 +80,7 @@ pre[class*="language-"] {
 .token.char,
 .token.builtin,
 .token.inserted {
-	color: #a6e22e;
+	color: #81D4FA;
 }
 
 .token.operator,
@@ -97,7 +95,7 @@ pre[class*="language-"] {
 .token.atrule,
 .token.attr-value,
 .token.function {
-	color: #e6db74;
+	color: #CE9178;
 }
 
 .token.keyword {
@@ -123,7 +121,6 @@ pre[class*="language-"] {
 
 pre.line-numbers {
 	position: relative;
-	padding-left: 3.8em;
 	counter-reset: linenumber;
 }
 
@@ -136,10 +133,9 @@ pre.line-numbers > code {
 	pointer-events: none;
 	top: 0;
 	font-size: 100%;
-	left: -3.8em;
-	width: 3em; /* works for line-numbers below 1000 lines */
-	letter-spacing: -1px;
-	border-right: 1px solid #999;
+	left: -32px;
+	width: 16px; /* works for line-numbers below 1000 lines */
+	border-right: 1px solid rgba(255, 255, 255, 0.12);
 
 	-webkit-user-select: none;
 	-moz-user-select: none;
@@ -156,8 +152,8 @@ pre.line-numbers > code {
 
 .line-numbers-rows > span:before {
 	content: counter(linenumber);
-	color: #999;
+	color: rgba(255, 255, 255, 0.5);
 	display: block;
-	padding-right: 0.8em;
+	padding-right: 8px;
 	text-align: right;
 }
