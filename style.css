@@ -59,11 +59,14 @@
 }
 
 /* Features */
-#features{
-    padding: 64px 0px 64px 0px;
-}
 #features .icon{
     font-size: 64px;
+}
+
+@media (min-width: 961px){
+    #features{
+        padding: 64px 0px 64px 0px;
+    }
 }
 
 /* Docs */
