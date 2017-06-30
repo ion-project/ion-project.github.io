@@ -372,7 +372,7 @@ IonFramework.fn.run = function(){
         if($element.getAttr("data-tooltip")){
             $element.tooltip();
         }
-    })
+    });
 
     Ion.get(document).on("focus", function(event){
         $element = Ion.get(event.target);
@@ -380,7 +380,7 @@ IonFramework.fn.run = function(){
         if(event.target.nodeName == "INPUT" && Ion.get(event.target).parents(".searchbar.fixed").length){
             Ion.searchbar.fixed(event, true);
         }
-    }, true)
+    }, true);
 
     Ion.get(document).on("blur", function(event){
         if(event.target.nodeName == "INPUT"){
@@ -502,7 +502,7 @@ IonSelector.fn.parents = function(selector){
         }
     });
 
-    obj = Ion.get();
+    obj = new IonSelector();
 
     this.arrayToObj(results, obj);
     obj.length = results.length;
@@ -535,7 +535,7 @@ IonSelector.fn.children = function(selector){
         }
     });
 
-    obj = Ion.get();
+    obj = new IonSelector();
 
     this.arrayToObj(results, obj);
     obj.length = results.length;
@@ -555,7 +555,7 @@ IonSelector.fn.find = function(selector){
         });
     });
 
-    obj = Ion.get();
+    obj = new IonSelector();
 
     this.arrayToObj(results, obj);
     obj.length = results.length;
@@ -590,7 +590,7 @@ IonSelector.fn.prev = function(selector){
         }
     });
 
-    obj = Ion.get();
+    obj = new IonSelector();
 
     this.arrayToObj(results, obj);
     obj.length = results.length;
@@ -625,7 +625,7 @@ IonSelector.fn.next = function(selector){
         }
     });
 
-    obj = Ion.get();
+    obj = new IonSelector();
 
     this.arrayToObj(results, obj);
     obj.length = results.length;
@@ -1115,7 +1115,25 @@ IonSelector.fn.emit = function(event){
     this.each(function(){
         this.dispatchEvent(event);
     });
-};
+}
+
+IonSelector.fn.copyToClipboard = function(){
+    var $element = this[0],
+        selection,
+        range;
+
+    if($element){
+        selection = window.getSelection();
+
+        range = document.createRange();
+        range.selectNodeContents($element);
+
+        selection.removeAllRanges();
+        selection.addRange(range);
+
+        document.execCommand("copy");
+    }
+}
 
 Ion.run();
 
