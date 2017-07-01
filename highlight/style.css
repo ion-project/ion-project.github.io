@@ -7,7 +7,7 @@
 
 code[class*="language-"],
 pre[class*="language-"] {
-	color: #f8f8f2;
+	color: #FFFFFF;
 	background: none;
 	font-size: 14px;
 	font-family: "RobotoDraft", sans-serif;
@@ -17,15 +17,6 @@ pre[class*="language-"] {
 	word-break: normal;
 	word-wrap: normal;
 	line-height: 1.5;
-
-	-moz-tab-size: 4;
-	-o-tab-size: 4;
-	tab-size: 4;
-
-	-webkit-hyphens: none;
-	-moz-hyphens: none;
-	-ms-hyphens: none;
-	hyphens: none;
 }
 
 /* Code blocks */
@@ -35,7 +26,7 @@ pre[class*="language-"] {
 	border-radius: 2px;
 }
 pre[class*="language-"] > code{
-	margin-left: -48px;
+	left: 56px;
 }
 
 :not(pre) > code[class*="language-"],
@@ -132,12 +123,13 @@ pre.line-numbers > code {
 }
 
 .line-numbers .line-numbers-rows {
+	left: -56px;
 	position: absolute;
 	pointer-events: none;
 	top: 0;
 	font-size: 100%;
-	left: -32px;
-	width: 16px; /* works for line-numbers below 1000 lines */
+	width: 32px;
+	padding-right: 8px;
 	border-right: 1px solid rgba(255, 255, 255, 0.12);
 
 	-webkit-user-select: none;

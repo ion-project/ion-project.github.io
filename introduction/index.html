@@ -1,7 +1,7 @@
 <!DOCTYPE>
 <html>
     <head>
-        <title>Ion</title>
+        <title>Introdução - Ion</title>
 
         <meta charset="UTF-8" />
         <meta name="theme-color" content="#212121" />
@@ -17,19 +17,19 @@
     <body>
         <aside class="navbar open">
             <ul class="list">
-                <a href="/introduction"><li class="item">Introdução</li></a>
-                <li class="item">Documentação</li>
-                <li class="item">Componentes</li>
-                <li class="item">Personalização</li>
-                <li class="item">Javascript</li>
-                <li class="item">Sobre</li>
+                <a href="/introduction"><li class="item ripple">Introdução</li></a>
+                <li class="item ripple">Documentação</li>
+                <li class="item ripple">Componentes</li>
+                <li class="item ripple">Personalização</li>
+                <li class="item ripple">Javascript</li>
+                <li class="item ripple">Sobre</li>
             </ul>
         </aside>
         
-        <header class="toolbar fixed grey-900 motion in standart">
-            <a class="radial" onclick="Ion.navbar.toggle()"><i class="icon">&#xE5D2;</i></a>
+        <header class="toolbar fixed grey-900 container">
+            <a class="radial hide-on-d" onclick="Ion.navbar.toggle()"><i class="icon">&#xE5D2;</i></a>
             <div>
-                <img src="/img/ion_logo.svg" class="logo-mini hidden motion in acceleration" />
+                <a href="/"><img src="/img/ion_logo.svg" class="logo-mini" /></a>
             </div>
         </header>
 
@@ -39,17 +39,46 @@
                 <section>
                     <h1 class="display-1">Introdução</h1>
 
+                    <p>Para iniciar seu projeto com o IonDesign você poderia começar baixando a última versão compactada do framework.</p>
+                    <a class="button raised blue-500">DOWNLOAD</a>
+                    <p>Após terminar o download descompacte o arquivo em algum diretório de sua preferência. Você irá perceber que o arquivo descompacto é um conjunto de arquivos css e javascript, além das fontes. A sua estrutura de projeto irá se parecer com isso.</p>
+
+<pre class="line-numbers">
+<code class="language-markup">/Seu projeto
+    /ion
+        /fonts
+            material-icons.eot
+            material-icons.ijmap
+            material-icons.ttf
+            material-icons.woff
+            material-icons.woff2
+        ion.css
+        ion.js
+        ion.min.css
+        ion.min.js
+</code>
+</pre>
+
+                    <p>É recomendado utilizar os arquivos minificados (Que contém ".min" no nome) se você necessita de mais performance e um carregamento mais rápido em suas páginas. Outra dica é colocar os arquivos javascript no final de suas páginas.</p>
+
                     <h2 class="headline">Estrutura básica do HTML</h2>
-                    <pre class="line-numbers">
-                        <code class="language-markup">&lt;!DOCTYPE html&gt;
-                        &lt;html&gt;
-                            &lt;head&gt;
-                                &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
-                            &lt;/head&gt;
-                            &lt;body&gt;
-                            &lt;/body&gt;
-                        &lt;/html&gt;</code>
-                    </pre>
+
+                    <p>Para testar o funcionamento IonDesign você pode implementar o código abaixo em sua página web. Apenas certifique-se que todos seu arquivos estão sendo corretamente referênciados no código. </p>
+
+<pre class="line-numbers">
+<code class="language-markup">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+
+        &lt;link href=&quot;ion/ion.css&quot; type=&quot;text/css&quot; rel=&quot;stylesheet&quot; /&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;/body&gt;
+    &lt;script src=&quot;ion/ion.js&quot;&gt;&lt;/script&gt;
+&lt;/html&gt;
+</code>
+</pre>
                 </section>
             </div>
 
