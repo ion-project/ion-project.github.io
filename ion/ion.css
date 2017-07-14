@@ -1,115 +1,4 @@
-/*
-
-ionDesign - version 0.08.13
-
-version 0.08.13 2017-06-29
-    - fixed styles of "a" tag
-
-version 0.08.12 2017-06-28
-    - update styles to list in navbar
-    - add hide class to hidden elements on phone, tanlet and desktop
-
-version 0.08.11 2017-06-07
-    - add .center class to layout section to center inline elements
-    - add .valign class to layout section to center vertically the element
-    - fixed the container position after toolbar fixed element
-
-version 0.08.10 2017-05-18
-    - fixed the bug with ripple position on transform translate
-
-version 0.08.9 2017-02-21
-    - fixed the bug with the tabs indicator position on scrolled elements
-
-version 0.08.8 2017-02-18 to 2017-02-20
-    - add .banner (element that fill whole screen) to Layout section
-    - improve responsive
-        - responsive to tables
-        - responsive to toolbar
-        - responsive to chips
-
-version 0.08.7 2017-02-10
-    - improve chips
-        - add autocomplete list
-        - add autocomplete list limit
-        - add minlenght of search input to search
-        - add delete function on click
-        - add delete function on backspace
-        - add events callback
-
-version 0.08.5 2017-02-04 to 2017-02-07
-    - add chips
-
-version 0.08 2017-02-02 to 2017-02-03
-    - add searchbars section
-        - searchbar fixed
-        - searchbar centered
-
-version 0.07 2017-01-27
-    - improve responsive of navbar and main content
-    - add .container class that contains the others elements responsibly
-    - fixed the bug that not displays the tab indicator in small screens
-
-version 0.06.5 2017-01-17 to 2017-01-18
-    - add Expansion panel
-    - fixed the bug with event.path cross-browser support functions from Ion.path
-
-version 0.06 2017-01-12
-    - add tabs to components section
-
-version 0.05 2017-01-04
-    - improve performance and refine the javascript
-    - fixed the bug with cross-browser matches method
-    - add form section components
-        - checkbox
-        - radio button
-
-version 0.04 2016-12-28 to 2016-12-30
-    - start selection components from form section
-        - Switch selection
-    - improviments at toolbar items
-    - fixed the bug that crashed the ripple effect after drag over the button
-    - add Radio button to form section
-    - add Checkbox to form section
-    - improve switch implementation, now is not needle to put <span> tag in the switch class tag
-
-version 0.03.3 2016-12-27
-    - add Dialogs
-    - add Navbars
-    - add Expansion panels
-
-version 0.03.2 2016-12-19
-    - add menu component
-    - improve of z position of elements that uses elevations and shadows
-
-version 0.03.1 2016-12-14
-    - improvements in the grid system
-        - support to tablets and phones
-        - responsive grid
-    - fixed the bug that did not allow the background classes to appear on certain elements
-
-version 0.03 - 2016-12-04 to 2016-12-13
-    - add dividers to section layout
-    - add improviments and new features to section components
-        - Cards
-        - Data tables
-        - Text fields (input)
-        - Lists
-        - Toolbar
-    - add section motion
-        - add ripple effect to buttons
-    - add Tooltips
-    - add Toasts
-
-version 0.02 - 2016-12-01 to 2016-12-03
-    - add layout section
-    - add grid system (box, row, col's)
-    - add components section (buttons)
-        - button flat, button raised, float action button (fab)
-
-version 0.01 - 2016-08
-    - start
-
-*/
+/* IonDesign - version 0.1 */
 
 @import "https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500";
 
@@ -929,7 +818,7 @@ a{
 .grey-50{
     background-color: #FAFAFA !important;
 }
-.grey-100, .toolbar{
+.grey-100{
     background-color: #F5F5F5 !important;
 }
 .grey-200{
@@ -1096,7 +985,7 @@ a{
     pointer-events: none;
 }
 .ripple .wave, .button .wave, .tab .wave{
-    background-color: rgba(0, 0, 0, 0.54);
+    background-color: rgba(0, 0, 0, 0.38);
     transition: transform 0.425s cubic-bezier(0.4, 0.0, 0.2, 1), opacity 0.425s cubic-bezier(0.4, 0.0, 0.2, 1); 
 }
 .radial .wave, .radio .wave, .checkbox .wave{
@@ -1145,6 +1034,9 @@ a{
 .valign{
     align-items: center;
 }
+.hide{
+    display: none;
+}
 .row{
     padding: 4px;
     display: flex;
@@ -1188,6 +1080,42 @@ a{
 }
 .col-12, .banner{
     width: 100%;
+}
+.offset-1{
+    margin-left: 8.33333333333333%;
+}
+.offset-2{
+    margin-left: 16.66666666666667%;
+}
+.offset-3{
+    margin-left: 25%;
+}
+.offset-4{
+    margin-left: 33.33333333333333%;
+}
+.offset-5{
+    margin-left: 41.66666666666667%;
+}
+.offset-6{
+    margin-left: 50%; 
+}
+.offset-7{
+    margin-left: 58.33333333333333%;
+}
+.offset-8{
+    margin-left: 66.66666666666667%;
+}
+.offset-9{
+    margin-left: 75%;
+}
+.offset-10{
+    margin-left: 83.33333333333333%;
+}
+.offset-11{
+    margin-left: 91.66666666666667%;
+}
+.offset-12{
+    margin-left: 100%;
 }
 .row [class^="col"]{
     padding: 4px;
@@ -1246,6 +1174,42 @@ a{
     .t-12{
         width: 100%;
     }
+    .offset-t-1{
+        margin-left: 8.33333333333333%;
+    }
+    .offset-t-2{
+        margin-left: 16.66666666666667%;
+    }
+    .offset-t-3{
+        margin-left: 25%;
+    }
+    .offset-t-4{
+        margin-left: 33.33333333333333%;
+    }
+    .offset-t-5{
+        margin-left: 41.66666666666667%;
+    }
+    .offset-t-6{
+        margin-left: 50%; 
+    }
+    .offset-t-7{
+        margin-left: 58.33333333333333%;
+    }
+    .offset-t-8{
+        margin-left: 66.66666666666667%;
+    }
+    .offset-t-9{
+        margin-left: 75%;
+    }
+    .offset-t-10{
+        margin-left: 83.33333333333333%;
+    }
+    .offset-t-11{
+        margin-left: 91.66666666666667%;
+    }
+    .offset-t-12{
+        margin-left: 100%;
+    }
     .hide-on-t{
         display: none !important;
     }       
@@ -1288,6 +1252,42 @@ a{
     .p-12{
         width: 100%;
     }
+    .offset-p-1{
+        margin-left: 8.33333333333333%;
+    }
+    .offset-p-2{
+        margin-left: 16.66666666666667%;
+    }
+    .offset-p-3{
+        margin-left: 25%;
+    }
+    .offset-p-4{
+        margin-left: 33.33333333333333%;
+    }
+    .offset-p-5{
+        margin-left: 41.66666666666667%;
+    }
+    .offset-p-6{
+        margin-left: 50%; 
+    }
+    .offset-p-7{
+        margin-left: 58.33333333333333%;
+    }
+    .offset-p-8{
+        margin-left: 66.66666666666667%;
+    }
+    .offset-p-9{
+        margin-left: 75%;
+    }
+    .offset-p-10{
+        margin-left: 83.33333333333333%;
+    }
+    .offset-p-11{
+        margin-left: 91.66666666666667%;
+    }
+    .offset-p-12{
+        margin-left: 100%;
+    }
     .hide-on-p{
         display: none !important;
     }
@@ -1312,6 +1312,9 @@ button, a.button{
 }
 .button{
     border: none;
+}
+.button, .button .icon, .switch, .radio, .checkbox{
+    vertical-align: middle;
 }
 .button, .tabs{
     font-size: 14px;
@@ -1491,7 +1494,7 @@ a.button.flat, a.button.raised{
 .chips .list.show{
     display: block;
 }
-.chips .list .item{
+.chips .list .item, .chip .icon{
     cursor: pointer;
 }
 .chip{
@@ -1516,7 +1519,6 @@ a.button.flat, a.button.raised{
 }
 .chip .icon{
     left: 12px;
-    font-size: 1em;
     position: relative;
     vertical-align: middle;
     margin: 0px 4px 0px -12px;
@@ -1689,7 +1691,10 @@ ul.list, ol.list{
 }
 .list .item{
     display: flex;
-    padding: 8px 16px 8px 16px;
+}
+.list .item, .list .item.expansion > a{
+    padding: 16px;
+    line-height: 1;
 }
 .list .item > img{
     max-height: 40px;
@@ -1706,19 +1711,19 @@ ul.list, ol.list{
 /* Expansion panels */
 
 .list .item.expansion{
+    padding: 0px;
     display: block;
-    padding-top: 0px;
-    padding-bottom: 0px;
 }
-.list .item.expansion > a{
-    line-height: 48px;
+.list .item.expansion .content{
+    padding-left: 16px;
+    padding-right: 16px;
 }
 .list .item.expansion .content, .expansion-panel .item .content{
     display: none;
     overflow: hidden;
     transition: height 0.225s cubic-bezier(0.4, 0.0, 0.2, 1);
 }
-.list .item.expansion.active .content, .expansion-panel .item.active .content{
+.list .item.expansion > a, .list .item.expansion.active .content, .expansion-panel .item.active .content{
     display: block;
 }
 
@@ -1939,6 +1944,7 @@ ul.list, ol.list{
     width: 256px;
     height: 100%;
     position: fixed;
+    overflow-y: auto;
     background-color: #FFFFFF;
     transform: translateX(-100%);
     transition: transform 0.195s cubic-bezier(0.4, 0.0, 0.6, 1);
@@ -1947,7 +1953,7 @@ ul.list, ol.list{
     transform: translateX(0%);
     transition: transform 0.225s cubic-bezier(0.0, 0.0, 0.2, 1);
 }
-.navbar .list .item:hover{
+.navbar .list .item:not(.expansion):hover, .navbar .list .item > a:hover{
     background-color: rgba(0, 0, 0, 0.12);
 }
 
@@ -1997,4 +2003,100 @@ ul.list, ol.list{
 }
 .tabs-content > *.show{
     display: block;
+}
+
+/* Progress & activity */
+
+.progress{
+    overflow: hidden;
+    position: relative;
+}
+.progress.linear{
+    height: 4px;
+}
+.progress.linear.determinate::before, .progress.linear.indeterminate::before, .progress.linear.query::before{
+    content: "";
+    width: 100%;
+    background-color: #90CAF9;
+}
+.progress.linear.determinate .bar{
+    transition: width 0.225s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+.progress.linear.determinate .bar, .progress.linear.indeterminate .bar::before, .progress.linear.indeterminate .bar::after, .progress.linear.query .bar::before, .progress.linear.query .bar::after{
+    background-color: #2196F3;
+}
+.progress.linear.determinate::before, .progress.linear.indeterminate::before, .progress.linear.query::before, .progress.linear.determinate .bar, .progress.linear.indeterminate .bar::before, .progress.linear.indeterminate .bar::after, .progress.linear.query .bar::before, .progress.linear.query .bar::after{
+    height: 100%;
+    position: absolute;
+}
+.progress.linear.indeterminate .bar::before{
+    animation: progress-liner-indeterminate-1 2.5s cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+.progress.linear.indeterminate .bar::after{
+    animation: progress-liner-indeterminate-2 2.5s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+.progress.linear.query .bar::before{
+    animation: progress-liner-query-1 2.5s cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+.progress.linear.query .bar::after{
+    animation: progress-liner-query-2 2.5s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+.progress.linear.indeterminate .bar::after, .progress.linear.query .bar::after{
+    animation-delay: 1.3s;
+}
+.progress.linear.indeterminate .bar::before, .progress.linear.indeterminate .bar::after, .progress.linear.query .bar::before, .progress.linear.query .bar::after{
+    content: "";
+    animation-iteration-count: infinite;
+}
+
+@keyframes progress-liner-indeterminate-1{
+    0%{
+        left: -60%;
+        right: 100%; 
+    }
+    100%{
+        left: 102%;
+        right: -60%; 
+    }
+}
+
+@keyframes progress-liner-indeterminate-2{
+    0%{
+        left: -180%;
+        right: 120%; 
+    }
+    60%{
+        left: 110%;
+        right: -12%; 
+    }
+    100%{
+        left: 110%;
+        right: -12%; 
+    }
+}
+
+@keyframes progress-liner-query-1{
+    0%{
+        left: 100%;
+        right: -60%; 
+    }
+    100%{
+        left: -60%;
+        right: 102%; 
+    }
+}
+
+@keyframes progress-liner-query-2{
+    0%{
+        left: 120%;
+        right: -180%; 
+    }
+    60%{
+        left: -12%;
+        right: 110%; 
+    }
+    100%{
+        left: -12%;
+        right: 110%; 
+    }
 }

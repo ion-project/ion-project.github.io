@@ -1,0 +1,956 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Documentação - Ion</title>
+
+        <meta charset="UTF-8" />
+        <meta name="theme-color" content="#212121" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link href="/favicon.ico" type="image/x-icon" rel="icon shortcut" />
+
+        <link href="/ion/ion.css" type="text/css" rel="stylesheet" />
+        <link href="/highlight/style.css" type="text/css" rel="stylesheet" />
+        <link href="/style.css" type="text/css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <aside class="navbar open">
+            <ul class="list">
+                <a href="/introduction"><li class="item ripple">Introdução</li></a>
+                <li class="item expansion">
+                    <a class="ripple">Documentação</a>
+                    <div class="content">
+                        <ul class="list">
+                            <a href="/documentation/#buttons"><li class="item">Buttons</li></a>
+                            <a href="/documentation/#cards"><li class="item">Cards</li></a>
+                            <a href="/documentation/#chips"><li class="item">Chips</li></a>
+                            <a href="/documentation/#dialogs"><li class="item">Dialogs</li></a>
+                            <a href="/documentation/#dividers"><li class="item">Dividers</li></a>
+                            <a href="/documentation/#expansion-panels"><li class="item">Expansion panels</li></a>
+                            <a href="/documentation/#grid"><li class="item">Grid lists</li></a>
+                            <a href="/documentation/#lists"><li class="item">Lists</li></a>
+                            <a href="/documentation/#menus"><li class="item">Menus</li></a>
+                            <a href="/documentation/#progress"><li class="item">Progress & activitys</li></a>
+                            <a href="/documentation/#selection-controls"><li class="item">Selection controls</li></a>
+                            <a href="/documentation/#toasts"><li class="item">Snackbars & toasts</li></a>
+                            <a href="/documentation/#tables"><li class="item">Tables</li></a>
+                            <a href="/documentation/#tabs"><li class="item">Tabs</li></a>
+                            <a href="/documentation/#text-fields"><li class="item">Text fields</li></a>
+                            <a href="/documentation/#toolbars"><li class="item">Toolbars</li></a>
+                            <a href="/documentation/#tooltips"><li class="item">Tooltips</li></a>
+                        </ul>
+                    </div>
+                </li>
+                <li class="item ripple">Componentes</li>
+                <li class="item ripple expansion">
+                    <a class="ripple">Personalização</a>
+                    <div class="content">
+                        <ul class="list">
+                            <a href="/personalization/#color"><li class="item">Color</li></a>
+                            <a href="/personalization/#icons"><li class="item">Icons</li></a>
+                            <a href="/personalization/#color"><li class="item">Typography</li></a>
+                        </ul>
+                    </div>
+                </li>
+                <li class="item ripple expansion">
+                    <a class="ripple">Javascript</a>
+                    <div class="content">
+                        <ul class="list">
+                            <li class="item"></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="item ripple">Sobre</li>
+            </ul>
+        </aside>
+        
+        <header class="toolbar fixed grey-900 container">
+            <a class="radial hide-on-d" onclick="Ion.navbar.toggle()"><i class="icon">&#xE5D2;</i></a>
+            <div>
+                <a href="/"><img src="/img/ion_logo.svg" class="logo-mini" /></a>
+            </div>
+        </header>
+
+        <main class="container documentation">
+
+            <div class="box">
+                <section id="intro">
+                    <h1 class="display-1">Documentação</h1>
+
+                    <p>A documentação a seguir é um guia para implementação dos componentes do IonDesign.</p>
+                </section>
+
+                <section id="buttons">
+                    <h1 class="headline">Buttons</h1>
+                    
+                    <p>Botões são os componentes ideais para gerar alguma reação ao clique do usuário. No Material design os botões são divididos entre raised, flat e os float action buttons.</p>
+                    <div>
+                        <button class="button flat">BUTTON</button>
+                        <button class="button raised">BUTTON</button>
+                        <a href="https://material.io/" target="_blank" class="button raised grey-300">ANCHOR BUTTON</a>
+                        <button class="button raised green-500">COLORED BUTTON</button>
+                        <button class="button raised" disabled>DISABLED BUTTON</button>
+                        <button class="button raised">ICON BUTTON <i class="icon">&#xE150;</i></button>
+                    </div>
+                    <p>Os códigos dos botões acima se parecem com isso.</p>
+
+<pre class="line-numbers">
+<code class="language-markup">&lt;button class=&quot;button flat&quot;&gt;BUTTON&lt;/button&gt;
+    
+&lt;button class=&quot;button raised&quot;&gt;BUTTON&lt;/button&gt;
+
+&lt;a href=&quot;https://material.io/&quot; target=&quot;_blank&quot; class=&quot;button raised grey-300&quot;&gt;ANCHOR BUTTON&lt;/a&gt;
+
+&lt;button class=&quot;button raised green-500&quot;&gt;COLORED BUTTON&lt;/button&gt;
+
+&lt;button class=&quot;button raised&quot; disabled&gt;DISABLED BUTTON&lt;/button&gt;
+
+&lt;button class=&quot;button raised&quot;&gt;ICON BUTTON &lt;i class=&quot;icon&quot;&gt;&amp;#xE150;&lt;/i&gt;&lt;/button&gt;
+</code>
+</pre>
+                </section>
+
+                <section>
+                    <h1 class="headline">Float action buttons</h1>
+
+                    <p>Float action buttons são focados a representar a principal ação de uma aplicação ou página. Eles vem em dois tamanhos: Padrão ou mini. É recomendado utilizar apenas um por página.</p>
+                    <div class="demo-fab">
+                        <button class="button fab"><i class="icon">&#xE145;</i></button>
+                        <button class="button fab mini"><i class="icon">&#xE145;</i></button>
+                        <button class="button fab light-blue-500"><i class="icon">&#xE150;</i></button>
+                        <button class="button fab mini yellow-500"><i class="icon">&#xE150;</i></button>
+                    </div>
+<pre class="line-numbers">
+<code class="language-markup">&lt;button class=&quot;button fab&quot;&gt;&lt;i class=&quot;icon&quot;&gt;&amp;#xE145;&lt;/i&gt;&lt;/button&gt;
+
+&lt;button class=&quot;button fab mini&quot;&gt;&lt;i class=&quot;icon&quot;&gt;&amp;#xE145;&lt;/i&gt;&lt;/button&gt;
+
+&lt;button class=&quot;button fab light-blue-500&quot;&gt;&lt;i class=&quot;icon&quot;&gt;&amp;#xE150;&lt;/i&gt;&lt;/button&gt;
+
+&lt;button class=&quot;button fab mini yellow-500&quot;&gt;&lt;i class=&quot;icon&quot;&gt;&amp;#xE150;&lt;/i&gt;&lt;/button&gt;
+</code>
+</pre>
+                </section>
+
+                <section id="cards">
+                    <h1 class="headline">Cards</h1>
+
+                    <p>Você pode usar cards para organizar pequenos conjuntos de imagens ou textos em um bloco chamativo.</p>
+                </section>
+
+                <section id="chips">
+                    <h1 class="headline">Chips</h1>
+
+                    <div class="box">
+                        <div class="chips">
+                            <label>
+                                Contacts
+                            </label>
+                            <div class="content">
+                                <div class="chip"><span>Contact Name</span></div>
+                                <div class="chip">
+                                    <img src="/img/avatar.jpg" />
+                                    <span>Ali Connors</span>
+                                    <i class="icon">&#xE5C9;</i>
+                                </div>
+                                <div class="chip"><span>email@email.com</span></div>
+                                <input type="text" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <nav class="tabs" data-tabs="chips-tabs">
+                            <a class="tab" data-tab-id="chips-html">HTML</a>
+                            <a class="tab" data-tab-id="chips-javascript">JAVASCRIPT</a>
+                        </nav>
+
+                        <div id="chips-tabs" class="tabs-content">
+                            <section id="chips-html">
+<pre class="line-numbers">
+<code class="language-markup">&lt;div class=&quot;chips&quot;&gt;
+    &lt;label&gt;
+        Contacts
+    &lt;/label&gt;
+    &lt;div class=&quot;content&quot;&gt;
+        &lt;div class=&quot;chip&quot;&gt;&lt;span&gt;Contact Name&lt;/span&gt;&lt;/div&gt;
+        &lt;div class=&quot;chip&quot;&gt;
+            &lt;img src=&quot;/img/avatar.jpg&quot; /&gt;
+            &lt;span&gt;Ali Connors&lt;/span&gt;
+            &lt;i class=&quot;icon&quot;&gt;&amp;#xE5C9;&lt;/i&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;chip&quot;&gt;&lt;span&gt;email@email.com&lt;/span&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                            </section>
+                            <section id="chips-javascript">
+<pre class="line-numbers">
+<code class="language-javascript">Ion.get(".chips").chips({
+    placeholder: "Add a contact",
+    autocomplete: [
+        {text: "Autocomplete contact", subtitle: "Contact", img: "/img/avatar.jpg"},
+        {text: "John Doe", subtitle: "johndoe@email.com", img: "/img/avatar.jpg"},
+        {text: "Test", subtitle: "Test contact", img: "/img/avatar.jpg"},
+        {text: "Contact2", subtitle: "contact2@email.com", img: "/img/avatar.jpg"},
+        {text: "Deletable contact", subtitle: "deletable", img: "/img/avatar.jpg", deletable: true},
+    ],
+    limit: 4,
+    minlengthSearch: 2
+});
+</code>
+</pre>
+                            </section>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="dialogs">
+                    <h1 class="headline">Dialogs</h1>
+                    
+                    <div>
+                        <button class="button raised" onclick="Ion.dialog({
+                                                                    title: 'Dialog title', 
+                                                                    subtitle: 'Dialog subtitle',
+                                                                    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id pellentesque est',
+                                                                    affirmativeText: 'OK',
+                                                                    dismissiveText: 'CANCEL',
+                                                                    class: 'myClass'
+                                                                });">DIALOG BUTTON</button>
+                    </div>
+
+                    <div>
+<pre class="line-numbers">
+<code class="language-javascript">Ion.dialog({
+    title: 'Dialog title', 
+    subtitle: 'Dialog subtitle',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id pellentesque est',
+    affirmativeText: 'OK',
+    dismissiveText: 'CANCEL',
+    class: 'myClass'
+});
+</code>
+</pre>
+                    </div>
+                </section>
+
+                <section id="dividers">
+                    <h1 class="headline">Dividers</h1>
+
+                    <p>Dividers podem ser usados para separar contéudos em seções ou para individualizar itens em uma lista.</p>
+                    <div>
+                        <div class="divider"></div>
+                    </div>
+
+<pre class="line-numbers">
+<code class="language-markup">&lt;div class=&quot;divider&quot;&gt;&lt;/div&gt;
+</code>
+</pre>
+                </section>
+
+                <section id="expansion-panels">
+                    <h1 class="headline">Expansion panels</h1>
+
+                    <div>
+                        <div class="expansion-panel">
+                            <div class="item">
+                                <header>
+                                        Item 1
+                                </header>
+                                <div class="content">
+                                    Content of item 1
+                                </div>
+                            </div>
+                            <div class="item">
+                                <header>
+                                    Item 2
+                                </header>
+                                <div class="content">
+                                    Content of item 2
+                                </div>
+                            </div>
+                            <div class="item">
+                                <header>
+                                    Item 3
+                                </header>
+                                <div class="content">
+                                    Content of item 3
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+<pre class="line-numbers">
+<code class="language-markup">&lt;div class=&quot;expansion-panel&quot;&gt;
+    &lt;div class=&quot;item&quot;&gt;
+        &lt;header&gt;
+                Item 1
+        &lt;/header&gt;
+        &lt;div class=&quot;content&quot;&gt;
+            Content of item 1
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;item&quot;&gt;
+        &lt;header&gt;
+            Item 2
+        &lt;/header&gt;
+        &lt;div class=&quot;content&quot;&gt;
+            Content of item 2
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;item&quot;&gt;
+        &lt;header&gt;
+            Item 3
+        &lt;/header&gt;
+        &lt;div class=&quot;content&quot;&gt;
+            Content of item 3
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+    
+                </section>
+
+                <section id="grid">
+                    <h1 class="headline">Grid lists</h1>
+
+                    <p>Grids organizam listagens de dados similares e padronizam o layout para uma melhor coopreensão do conteúdo que elas contém.</p>
+                
+                    <h2 class="title">Uso básico</h2>
+                    <div class="demo-grid">
+                        <div class="row center">
+                            <div class="col-12 blue-200">12</div>
+                            <div class="col-6 blue-200">6</div>
+                            <div class="col-6 blue-200">6</div>
+                            <div class="col-4 blue-200">4</div>
+                            <div class="col-4 blue-200">4</div>
+                            <div class="col-4 blue-200">4</div>
+                            <div class="col-3 blue-200">3</div>
+                            <div class="col-3 blue-200">3</div>
+                            <div class="col-3 blue-200">3</div>
+                            <div class="col-3 blue-200">3</div>
+                            <div class="col-2 blue-200">2</div>
+                            <div class="col-2 blue-200">2</div>
+                            <div class="col-2 blue-200">2</div>
+                            <div class="col-2 blue-200">2</div>
+                            <div class="col-2 blue-200">2</div>
+                            <div class="col-2 blue-200">2</div>
+                            <div class="col-1 blue-200">1</div>
+                            <div class="col-1 blue-200">1</div>
+                            <div class="col-1 blue-200">1</div>
+                            <div class="col-1 blue-200">1</div>
+                            <div class="col-1 blue-200">1</div>
+                            <div class="col-1 blue-200">1</div>
+                            <div class="col-1 blue-200">1</div>
+                            <div class="col-1 blue-200">1</div>
+                            <div class="col-1 blue-200">1</div>
+                            <div class="col-1 blue-200">1</div>
+                            <div class="col-1 blue-200">1</div>
+                            <div class="col-1 blue-200">1</div>
+                        </div>
+                    </div>
+<pre class="line-numbers">
+<code class="language-markup">&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-12&quot;&gt;12&lt;/div&gt;
+    &lt;div class=&quot;col-6&quot;&gt;6&lt;/div&gt;
+    &lt;div class=&quot;col-6&quot;&gt;6&lt;/div&gt;
+    &lt;div class=&quot;col-4&quot;&gt;4&lt;/div&gt;
+    &lt;div class=&quot;col-4&quot;&gt;4&lt;/div&gt;
+    &lt;div class=&quot;col-4&quot;&gt;4&lt;/div&gt;
+    &lt;div class=&quot;col-3&quot;&gt;3&lt;/div&gt;
+    &lt;div class=&quot;col-3&quot;&gt;3&lt;/div&gt;
+    &lt;div class=&quot;col-3&quot;&gt;3&lt;/div&gt;
+    &lt;div class=&quot;col-3&quot;&gt;3&lt;/div&gt;
+    &lt;div class=&quot;col-2&quot;&gt;2&lt;/div&gt;
+    &lt;div class=&quot;col-2&quot;&gt;2&lt;/div&gt;
+    &lt;div class=&quot;col-2&quot;&gt;2&lt;/div&gt;
+    &lt;div class=&quot;col-2&quot;&gt;2&lt;/div&gt;
+    &lt;div class=&quot;col-2&quot;&gt;2&lt;/div&gt;
+    &lt;div class=&quot;col-2&quot;&gt;2&lt;/div&gt;
+    &lt;div class=&quot;col-1&quot;&gt;1&lt;/div&gt;
+    &lt;div class=&quot;col-1&quot;&gt;1&lt;/div&gt;
+    &lt;div class=&quot;col-1&quot;&gt;1&lt;/div&gt;
+    &lt;div class=&quot;col-1&quot;&gt;1&lt;/div&gt;
+    &lt;div class=&quot;col-1&quot;&gt;1&lt;/div&gt;
+    &lt;div class=&quot;col-1&quot;&gt;1&lt;/div&gt;
+    &lt;div class=&quot;col-1&quot;&gt;1&lt;/div&gt;
+    &lt;div class=&quot;col-1&quot;&gt;1&lt;/div&gt;
+    &lt;div class=&quot;col-1&quot;&gt;1&lt;/div&gt;
+    &lt;div class=&quot;col-1&quot;&gt;1&lt;/div&gt;
+    &lt;div class=&quot;col-1&quot;&gt;1&lt;/div&gt;
+    &lt;div class=&quot;col-1&quot;&gt;1&lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+
+                    <h2 class="title">Grid flexível</h2>
+
+                    <p>Utilizando a classe <code class="language-css">.col</code> você pode fazer layouts fluídos e que se adaptam ao conteúdo.</p>
+
+                    <div class="demo-grid">
+                        <div class="row center">
+                            <div class="col-6 blue-200">6</div>
+                            <div class="col purple-200">.col</div>
+                            <div class="col purple-200">.col</div>
+                            <div class="col purple-200">.col</div>
+                            <div class="col purple-200">.col</div>
+                            <div class="col purple-200">.col</div>
+                            <div class="col purple-200">.col</div>
+                            <div class="col purple-200">.col</div>
+                        </div>
+                    </div>
+<pre class="line-numbers">
+<code class="language-markup">&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-6&quot;&gt;6&lt;/div&gt;
+    &lt;div class=&quot;col&quot;&gt;.col&lt;/div&gt;
+    &lt;div class=&quot;col&quot;&gt;.col&lt;/div&gt;
+    &lt;div class=&quot;col&quot;&gt;.col&lt;/div&gt;
+    &lt;div class=&quot;col&quot;&gt;.col&lt;/div&gt;
+    &lt;div class=&quot;col&quot;&gt;.col&lt;/div&gt;
+    &lt;div class=&quot;col&quot;&gt;.col&lt;/div&gt;
+    &lt;div class=&quot;col&quot;&gt;.col&lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                    <h2 class="title">Deslocamentos</h2>
+
+                    <div class="demo-grid">
+                        <div class="row center">
+                            <div class="col-6 offset-6 blue-200">.col-6 .offset-6</div>
+                            <div class="col-4 offset-4 purple-200">.col-4 .offset-4</div>
+                            <div class="col-5 offset-1 teal-200">.col-5 .offset-1</div>
+                        </div>
+                    </div>
+
+<pre class="line-numbers">
+<code class="language-markup">&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-6 offset-6&quot;&gt;.col-6 .offset-6&lt;/div&gt;
+    &lt;div class=&quot;col-4 offset-4&quot;&gt;.col-4 .offset-4&lt;/div&gt;
+    &lt;div class=&quot;col-5 offset-1&quot;&gt;.col-5 .offset-1&lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+
+                    <h2 class="title">Configuração para diferentes telas</h2>
+
+                    <p>Você pode configurar os grids para terem tamanhos diferentes para cada tipo de tela: Phone (Pequena), Tablet (Média) e Desktop (Grande).</p>
+                    <p>Para isto, basta adicionar o sufixo <code class="language-css">-p</code> ou <code class="language-css">-t</code> após a classe da coluna. Para o tipo desktop não é preciso fazer alterações, pois é o tamanho padrão.</p>
+<pre class="line-numbers">
+<code class="language-markup">&lt;div class=&quot;row&quot;&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                </section>
+
+                <section id="lists">
+                    <h1 class="headline">Lists</h1>
+
+                </section>
+
+                <section id="menus">
+                    <h1 class="headline">Menus</h1>
+
+                    <div>
+                        <div class="menu">
+                            <button class="button raised teal-500" onclick="Ion.menu(event)">MENU BUTTON</button>
+                            
+                            <div class="content">
+                                <ul class="list">
+                                    <li class="item ripple">Item 1</li>
+                                    <li class="item ripple">Item 2</li>
+                                    <li class="item ripple">Item 3</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <nav class="tabs" data-tabs="menus-tabs">
+                            <a class="tab" data-tab-id="menus-html">HTML</a>
+                            <a class="tab" data-tab-id="menus-javascript">JAVASCRIPT</a>
+                        </nav>
+
+                        <div id="menus-tabs" class="tabs-content">
+                            <section id="menus-html">
+                                
+<pre class="line-numbers">
+<code class="language-markup">&lt;div class=&quot;menu&quot;&gt;
+    &lt;button class=&quot;button flat&quot; &gt;BUTTON&lt;/button&gt;
+    
+    &lt;div class=&quot;content&quot;&gt;
+        &lt;ul class=&quot;list&quot;&gt;
+            &lt;li class=&quot;item&quot;&gt;Item 1&lt;/li&gt;
+            &lt;li class=&quot;item&quot;&gt;Item 2&lt;/li&gt;
+            &lt;li class=&quot;item&quot;&gt;Item 3&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                            </section>
+                            <section id="menus-javascript">
+
+<pre class="line-numbers">
+<code class="language-javascript">Ion.get("button").on("click", function(event){
+    Ion.menu(event);
+});
+</code>
+</pre>
+                            </section>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="progress">
+                    <h1 class="headline">Progress</h1>
+
+                    <h2 class="title">Progress determinate</h2>
+                    <div>
+                        <div class="progress linear determinate">
+                            <span class="bar" style="width: 64%;"></span>
+                        </div>
+                    </div>
+
+<pre class="line-numbers">
+<code class="language-markup">&lt;div class=&quot;progress linear determinate&quot;&gt;
+    &lt;span class=&quot;bar&quot; style=&quot;width: 64%;&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+</code>
+</pre>
+
+                    <h2 class="title">Progress indeterminate</h2>
+                    <div>
+                        <div class="progress linear indeterminate">
+                            <span class="bar"></span>
+                        </div>
+                    </div>
+
+<pre class="line-numbers">
+<code class="language-markup">&lt;div class=&quot;progress linear indeterminate&quot;&gt;
+    &lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+</code>
+</pre>
+
+                    <h2 class="title">Progress query</h2>
+                    <div>
+                        <div class="progress linear query">
+                            <span class="bar"></span>
+                        </div>
+                    </div>
+
+<pre class="line-numbers">
+<code class="language-markup">&lt;div class=&quot;progress linear query&quot;&gt;
+    &lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+</code>
+</pre>
+
+                </section>
+
+                <section id="selection-controls">
+                    <h1 class="headline">Selection controls</h1>
+
+                    <div>
+                        <div class="row center">
+                            <div class="col-4">
+                                <label class="checkbox">
+                                    <input type="checkbox" />
+                                </label>
+                            </div>
+                            <div class="col-4">
+                                <label class="radio">
+                                    <input name="radio" type="radio" />
+                                </label>
+                                <label class="radio">
+                                    <input name="radio" type="radio" />
+                                </label>
+                            </div>
+                            <div class="col-4">
+                                <label class="switch">
+                                    <input type="checkbox" />
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+<pre class="line-numbers">
+<code class="language-markup">&lt;label class=&quot;checkbox&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; /&gt;
+&lt;/label&gt;
+
+&lt;label class=&quot;radio&quot;&gt;
+    &lt;input type=&quot;radio&quot; /&gt;
+&lt;/label&gt;
+
+&lt;label class=&quot;switch&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; /&gt;
+&lt;/label&gt;
+</code>
+</pre>
+                    </div>
+                </section>
+
+                <section id="toasts">
+                    <h1 class="headline">Toasts</h1>
+
+                    <div>
+                        <button class="button raised" onclick="Ion.toast({text: 'Toast text', duration: 3000})">Toast button</button>
+                    </div>
+
+<pre class="line-numbers">
+<code class="language-javascript">Ion.toast({
+    text: "Toast text",
+    duration: 3000
+});
+</code>
+</pre>
+                </section>
+
+                <section id="tables">
+                    <h1 class="headline">Tables</h1>
+
+                    <div>
+                        <div class="responsive">
+                            <table class="table">
+                                <tr>
+                                    <th>Dessert (100g serving)</th>
+                                    <th>Calories</th>
+                                    <th>Fat (g)</th>
+                                    <th>Carbs (g)</th>
+                                </tr>
+                                <tr>
+                                    <td>Frozen yogurt</td>
+                                    <td>159</td>
+                                    <td>6.0</td>
+                                    <td>24</td>
+                                </tr>
+                                <tr>
+                                    <td>Ice cream sandwich</td>
+                                    <td>237</td>
+                                    <td>9.0</td>
+                                    <td>37</td>
+                                </tr>
+                                <tr>
+                                    <td>Eclair</td>
+                                    <td>262</td>
+                                    <td>16.0</td>
+                                    <td>24</td>
+                                </tr>
+                                <tr>
+                                    <td>Cupcake</td>
+                                    <td>305</td>
+                                    <td>3.7</td>
+                                    <td>67</td>
+                                </tr>
+                                <tr>
+                                    <td>Gingerbread</td>
+                                    <td>356</td>
+                                    <td>16.0</td>
+                                    <td>49</td>
+                                </tr>
+                                <tr>
+                                    <td>Jelly bean</td>
+                                    <td>375</td>
+                                    <td>0.0</td>
+                                    <td>94</td>
+                                </tr>
+                                <tr>
+                                    <td>Lollipop</td>
+                                    <td>392</td>
+                                    <td>0.2</td>
+                                    <td>98</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div>
+<pre class="line-numbers">
+<code class="language-markup">&lt;div class=&quot;responsive&quot;&gt;
+    &lt;table class=&quot;table&quot;&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Dessert (100g serving)&lt;/th&gt;
+            &lt;th&gt;Calories&lt;/th&gt;
+            &lt;th&gt;Fat (g)&lt;/th&gt;
+            &lt;th&gt;Carbs (g)&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Frozen yogurt&lt;/td&gt;
+            &lt;td&gt;159&lt;/td&gt;
+            &lt;td&gt;6.0&lt;/td&gt;
+            &lt;td&gt;24&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Ice cream sandwich&lt;/td&gt;
+            &lt;td&gt;237&lt;/td&gt;
+            &lt;td&gt;9.0&lt;/td&gt;
+            &lt;td&gt;37&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Eclair&lt;/td&gt;
+            &lt;td&gt;262&lt;/td&gt;
+            &lt;td&gt;16.0&lt;/td&gt;
+            &lt;td&gt;24&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Cupcake&lt;/td&gt;
+            &lt;td&gt;305&lt;/td&gt;
+            &lt;td&gt;3.7&lt;/td&gt;
+            &lt;td&gt;67&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Gingerbread&lt;/td&gt;
+            &lt;td&gt;356&lt;/td&gt;
+            &lt;td&gt;16.0&lt;/td&gt;
+            &lt;td&gt;49&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Jelly bean&lt;/td&gt;
+            &lt;td&gt;375&lt;/td&gt;
+            &lt;td&gt;0.0&lt;/td&gt;
+            &lt;td&gt;94&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Lollipop&lt;/td&gt;
+            &lt;td&gt;392&lt;/td&gt;
+            &lt;td&gt;0.2&lt;/td&gt;
+            &lt;td&gt;98&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                    </div>
+                </section>
+
+                <section id="tabs">
+                    <h1 class="headline">Tabs</h1>
+
+                    <div class="box">
+                        <nav class="tabs" data-tabs="tabs-content">
+                            <a class="tab" data-tab-id="tab-1">TAB 1</a>
+                            <a class="tab" data-tab-id="tab-2">TAB 2</a>
+                            <a class="tab" data-tab-id="tab-3">TAB 2</a>
+                        </nav>
+
+                        <div id="tabs-content" class="tabs-content">
+                            <section id="tab-1">Content of tab 1</section>
+                            <section id="tab-2">Content of tab 2</section>
+                            <section id="tab-3">Content of tab 3</section>
+                        </div>
+                    </div>
+
+                    <div>
+                        <nav class="tabs" data-tabs="tabs-tabs">
+                            <a class="tab" data-tab-id="tabs-html">HTML</a>
+                            <a class="tab" data-tab-id="tabs-javascript">JAVASCRIPT</a>
+                        </nav>
+
+                        <div id="tabs-tabs" class="tabs-content">
+                            <section id="tabs-html">
+<pre class="line-numbers">
+<code class="language-markup">&lt;nav class=&quot;tabs&quot; data-tabs=&quot;tabs-content&quot;&gt;
+    &lt;a class=&quot;tab&quot; data-tab-id=&quot;tab-1&quot;&gt;TAB 1&lt;/a&gt;
+    &lt;a class=&quot;tab&quot; data-tab-id=&quot;tab-2&quot;&gt;TAB 2&lt;/a&gt;
+    &lt;a class=&quot;tab&quot; data-tab-id=&quot;tab-3&quot;&gt;TAB 2&lt;/a&gt;
+&lt;/nav&gt;
+
+&lt;div id=&quot;tabs-content&quot; class=&quot;tabs-content&quot;&gt;
+    &lt;section id=&quot;tab-1&quot;&gt;Content of tab 1&lt;/section&gt;
+    &lt;section id=&quot;tab-2&quot;&gt;Content of tab 2&lt;/section&gt;
+    &lt;section id=&quot;tab-3&quot;&gt;Content of tab 3&lt;/section&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                            </section>
+                            <section id="tabs-javascript">
+<pre class="line-numbers">
+<code class="language-javascript">Ion.get(".tabs").tabs();
+</code>
+</pre>
+                            </section>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section id="text-fields">
+                    <h1 class="headline">Text fields</h1>
+
+                    <div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="text-field">
+                                    <input />
+                                    <span></span>
+                                    <label>Label text</label>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="text-field">
+                                    <i class="icon">&#xE0BE;</i>
+                                    <div>
+                                        <input />
+                                        <span></span>
+                                        <label>Label text</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+<pre class="line-numbers">
+<code class="language-markup">&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col&quot;&gt;
+
+        &lt;div class=&quot;text-field&quot;&gt;
+            &lt;input /&gt;
+            &lt;span&gt;&lt;/span&gt;
+            &lt;label&gt;Label text&lt;/label&gt;
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+    &lt;div class=&quot;col&quot;&gt;
+
+        &lt;div class=&quot;text-field&quot;&gt;
+            &lt;i class=&quot;icon&quot;&gt;&amp;#xE0BE;&lt;/i&gt;
+            &lt;div&gt;
+                &lt;input /&gt;
+                &lt;span&gt;&lt;/span&gt;
+                &lt;label&gt;Label text&lt;/label&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                    </div>
+                    
+                    <h2 class="title">Searchbar fixed</h2>
+                    
+                    <div>
+                        <div class="searchbar fixed">
+                            <div class="search-field">
+                                <i class="icon">&#xE8B6;</i>
+                                <input type="search" placeholder="Pesquisar" />
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+<pre class="line-numbers">
+<code class="language-markup">&lt;div class=&quot;searchbar fixed&quot;&gt;
+    &lt;div class=&quot;search-field&quot;&gt;
+        &lt;i class=&quot;icon&quot;&gt;&amp;#xE8B6;&lt;/i&gt;
+        &lt;input type=&quot;search&quot; placeholder=&quot;Pesquisar&quot; /&gt;
+        &lt;span&gt;&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                    </div>
+
+                    <h2 class="title">Searchbar centered</h2>
+
+                    <div>
+                        <div class="searchbar centered">
+                            <i class="icon">&#xE8B6;</i>
+                            <input type="search" placeholder="Pesquisar" />
+                        </div>
+                    </div>
+                </section>
+
+                <div>
+<pre class="line-numbers">
+<code class="language-markup">&lt;div class=&quot;searchbar centered&quot;&gt;
+    &lt;i class=&quot;icon&quot;&gt;&amp;#xE8B6;&lt;/i&gt;
+    &lt;input type=&quot;search&quot; placeholder=&quot;Pesquisar&quot; /&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                </div>
+
+                <section id="toolbars">
+                    <h1 class="headline">Toolbar</h1>
+
+                    <div>
+                        <header class="toolbar light-blue-500">
+                            <a class="radial" onclick="Ion.navbar.show()"><i class="icon">&#xE5D2;</i></a>
+
+                            <div class="flex">
+                                <div class="searchbar centered light-blue-100">
+                                    <i class="icon">&#xE8B6;</i>
+                                    <input type="search" placeholder="Pesquisar" />
+                                </div>
+                            </div>
+                            
+                            <a class="radial"><i class="icon">&#xE029;</i></a>
+                        </header>
+                    </div>
+
+                    <div>
+<pre class="line-numbers">
+<code class="language-markup">&lt;header class=&quot;toolbar light-blue-500&quot;&gt;
+    &lt;a class=&quot;radial&quot; onclick=&quot;Ion.navbar.show()&quot;&gt;&lt;i class=&quot;icon&quot;&gt;&amp;#xE5D2;&lt;/i&gt;&lt;/a&gt;
+
+    &lt;div class=&quot;flex&quot;&gt;
+        &lt;div class=&quot;searchbar centered light-blue-100&quot;&gt;
+            &lt;i class=&quot;icon&quot;&gt;&amp;#xE8B6;&lt;/i&gt;
+            &lt;input type=&quot;search&quot; placeholder=&quot;Pesquisar&quot; /&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    
+    &lt;a class=&quot;radial&quot;&gt;&lt;i class=&quot;icon&quot;&gt;&amp;#xE029;&lt;/i&gt;&lt;/a&gt;
+&lt;/header&gt;
+</code>
+</pre>
+                    </div>
+                </section>
+
+                <section id="tooltips">
+                    <h1 class="headline">Tooltips</h1>
+
+                    <p>Tooltips ajudam a esclarecer o objetivo de outros componenetes da página com textos descritivos ao passar o mouse sobre ele.</p>
+                    <div>
+                        <button class="button raised" data-tooltip="Tooltip text bottom">Tooltip bottom</button>
+                        <button class="button raised" data-tooltip="Tooltip text top" data-position="top">Tooltip top</button>
+                        <button class="button raised" data-tooltip="Tooltip text left" data-position="left">Tooltip left</button>
+                        <button class="button raised" data-tooltip="Tooltip text right" data-position="right">Tooltip right</button>
+                    </div>
+                    <p>O atributo <code class="language-markup">data-position</code> muda a posição do tooltip, por padrão esse atributo tem o valor "bottom", e <code class="language-markup">data-tooltip</code> é o label do elemento.</p>
+                
+<pre class="line-numbers">
+<code class="language-markup">&lt;button class=&quot;button raised&quot; data-tooltip=&quot;Tooltip text bottom&quot;&gt;Tooltip bottom&lt;/button&gt;
+
+&lt;button class=&quot;button raised&quot; data-tooltip=&quot;Tooltip text top&quot; data-position=&quot;top&quot;&gt;Tooltip top&lt;/button&gt;
+
+&lt;button class=&quot;button raised&quot; data-tooltip=&quot;Tooltip text left&quot; data-position=&quot;left&quot;&gt;Tooltip left&lt;/button&gt;
+
+&lt;button class=&quot;button raised&quot; data-tooltip=&quot;Tooltip text right&quot; data-position=&quot;right&quot;&gt;Tooltip right&lt;/button&gt;
+</code>
+</pre>
+                </section>
+
+            </div>
+
+            <footer>
+                <div class="box center">
+                    Copyright © 2016-2017 Ion
+                </div>
+            </footer>
+
+        </main>
+    </body>
+
+    <script src="/ion/ion.js"></script>
+    <script src="/highlight/index.js"></script>
+    <script src="/script.js"></script>
+</html>

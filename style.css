@@ -3,7 +3,7 @@
 }
 
 /* Toolbar */
-.toolbar .icon{
+.navbar + .toolbar .icon{
     color: #FFFFFF;
 }
 .logo-mini{
@@ -76,4 +76,35 @@
 #docs .graphic img{
     width: 50%;
     text-align: right;
+}
+
+/* Documentation */
+.documentation .box > section#intro ~ section{
+    padding-top: 80px;
+}
+.documentation pre{
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+.demo-fab .button.fab{
+    z-index: unset;
+}
+.demo-grid [class*="col"]{
+    background-clip: content-box;
+}
+
+/* Personalization */
+#color ul, #color ul li{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+#color ul li{
+    padding: 16px;
+}
+#color ul li .body-1{
+    margin: 0px;
+}
+#color ul li .hex{
+    float: right;
 }
