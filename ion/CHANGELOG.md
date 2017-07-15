@@ -2,6 +2,7 @@
 
 ## version 0.12 2017-07-14
 - add Material colors text
+- add parent selector
 - improve layout and components styles
 
 ## version 0.11 2017-07-08

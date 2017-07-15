@@ -500,6 +500,31 @@ IonSelector.fn.on = function(events, callback, useCapture){
     return this;
 }
 
+IonSelector.fn.parent = function(selector){
+    var results = [],
+        obj;
+    
+    this.each(function(){
+        if(this.parentNode){
+            if(selector){
+                if(Ion.matches(this.parentNode, selector)){
+                    results.push(this.parentNode);
+                }
+            }
+            else{
+                results.push(this.parentNode);
+            }
+        }
+    });
+
+    obj = new IonSelector();
+
+    this.arrayToObj(results, obj);
+    obj.length = results.length;
+
+    return obj;
+}
+
 IonSelector.fn.parents = function(selector){
     var parent,
     results = [],
@@ -992,8 +1017,10 @@ IonSelector.fn.flatRipple = function(){
 hideExpansionPanel = function(event){
     var $element = Ion.get(event.target).parents(".item.expansion, .expansion-panel .item");
 
-    if(!expansion){
-       $element.removeClass("active"); 
+    console.log($element);
+
+    if(!expansion && $element.length){
+        $element.i(0).removeClass("active"); 
     }
 }
 

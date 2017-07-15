@@ -2497,16 +2497,15 @@ ul.list, ol.list{
 .list .item .content.single-line{
     margin-top: 1.5px;
 }
+.list .item .list .item.expansion > a, .list .item .list .item:not(.expansion){
+    padding: 12px 32px 12px 32px;
+}
 
 /* Expansion panels */
 
 .list .item.expansion{
     padding: 0px;
     display: block;
-}
-.list .item.expansion .content{
-    padding-left: 16px;
-    padding-right: 16px;
 }
 .list .item.expansion .content, .expansion-panel .item .content{
     display: none;
