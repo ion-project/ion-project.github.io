@@ -53,7 +53,7 @@ a{
     font-size: 14px;
     font-weight: 500;
 }
-.body-1, .card .content, table.table tr td{
+.body-1, .card .content, table.table tr td, .list .item.expansion .list .item{
     font-size: 14px;
 }
 .caption, .text-field input:focus ~ label, .text-field input.active ~ label, table.table tr th{
