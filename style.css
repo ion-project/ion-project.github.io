@@ -32,32 +32,12 @@
     }
 }
 
-/* Anim */
-
-.anim-wrapper, .anim-element{
-    width: 100%;
-    height: 100%;
-}
-.anim{
-    position: relative;
-}
-.anim-wrapper{
-    top: 0px;
-    left: 0px;
-    position: absolute;
-    clip: rect(0, auto, auto, 0);
-}
-.anim-element{
-    top: 50%;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    transform: translateY(-100%);
-}
-
 /* Features */
 #features .icon{
     font-size: 64px;
+}
+#features .col-4 img{
+    width: 100%;
 }
 
 @media (min-width: 961px){
@@ -76,7 +56,7 @@
 }
 
 /* Documentation */
-.documentation .box > section#intro ~ section, .personalization .box > section#personalization ~ section{
+.documentation .box > section#intro ~ section, .personalization .box > section#personalization ~ section, .components .box > section#components ~ section{
     padding-top: 80px;
 }
 .documentation pre{
