@@ -49,7 +49,7 @@
                         <ul class="list">
                             <a href="/personalization/#color"><li class="item">Color</li></a>
                             <a href="/personalization/#icons"><li class="item">Icons</li></a>
-                            <a href="/personalization/#color"><li class="item">Typography</li></a>
+                            <a href="/personalization/#typography"><li class="item">Typography</li></a>
                         </ul>
                     </div>
                 </li>
@@ -137,6 +137,87 @@
                     <h1 class="headline">Cards</h1>
 
                     <p>Você pode usar cards para organizar pequenos conjuntos de imagens ou textos em um bloco chamativo.</p>
+                
+                    <div>
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="card">
+                                    <div class="media">
+                                        <img src="/img/demo.jpg" />
+                                    </div>
+                                    <header>
+                                        <p class="title">Title goes here</p>
+                                        <p class="subheading">Subtitle here</p>
+                                    </header>
+                                    <div class="content">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id pellentesque est
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="card">
+                                    <div class="media">
+                                        <img src="/img/demo.jpg" />
+                                    </div>
+                                    <header>
+                                        <p class="title">Title goes here</p>
+                                        <p class="subheading">Subtitle here</p>
+                                    </header>
+                                    <div class="group">
+                                        <button class="button flat" data-tooltip="Tooltip text">BUTTON</button>
+                                        <button class="button flat" data-tooltip="Tooltip text">BUTTON</button>  
+                                    </div>
+                                    <div class="content">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id pellentesque est
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+<pre class="line-numbers">
+<code class="language-markup">&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-3&quot;&gt;
+
+        &lt;div class=&quot;card&quot;&gt;
+            &lt;div class=&quot;media&quot;&gt;
+                &lt;img src=&quot;/img/demo.jpg&quot; /&gt;
+            &lt;/div&gt;
+            &lt;header&gt;
+                &lt;p class=&quot;title&quot;&gt;Title goes here&lt;/p&gt;
+                &lt;p class=&quot;subheading&quot;&gt;Subtitle here&lt;/p&gt;
+            &lt;/header&gt;
+            &lt;div class=&quot;content&quot;&gt;
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id pellentesque est
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+    &lt;div class=&quot;col-3&quot;&gt;
+
+        &lt;div class=&quot;card&quot;&gt;
+            &lt;div class=&quot;media&quot;&gt;
+                &lt;img src=&quot;/img/demo.jpg&quot; /&gt;
+            &lt;/div&gt;
+            &lt;header&gt;
+                &lt;p class=&quot;title&quot;&gt;Title goes here&lt;/p&gt;
+                &lt;p class=&quot;subheading&quot;&gt;Subtitle here&lt;/p&gt;
+            &lt;/header&gt;
+            &lt;div class=&quot;group&quot;&gt;
+                &lt;button class=&quot;button flat&quot; data-tooltip=&quot;Tooltip text&quot;&gt;BUTTON&lt;/button&gt;
+                &lt;button class=&quot;button flat&quot; data-tooltip=&quot;Tooltip text&quot;&gt;BUTTON&lt;/button&gt;  
+            &lt;/div&gt;
+            &lt;div class=&quot;content&quot;&gt;
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id pellentesque est
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+                    </div>
                 </section>
 
                 <section id="chips">
@@ -437,9 +518,15 @@
                     <h2 class="title">Configuração para diferentes telas</h2>
 
                     <p>Você pode configurar os grids para terem tamanhos diferentes para cada tipo de tela: Phone (Pequena), Tablet (Média) e Desktop (Grande).</p>
-                    <p>Para isto, basta adicionar o sufixo <code class="language-css">-p</code> ou <code class="language-css">-t</code> após a classe da coluna. Para o tipo desktop não é preciso fazer alterações, pois é o tamanho padrão.</p>
+                    <p>Para isto, basta adicionar o sufixo <code class="language-css">p-</code> ou <code class="language-css">t-</code> ao invés de <code class="language-css">col</code> na classe da coluna. Para o tipo desktop não é preciso fazer alterações, pois é o tamanho padrão.</p>
+                    <p>Os deslocamentos também podem ser ajustados para cada tipo de tela.</p>
 <pre class="line-numbers">
 <code class="language-markup">&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;t-3&quot;&gt;.t-3&lt;/div&gt;
+    &lt;div class=&quot;p-6&quot;&gt;.p-6&lt;/div&gt;
+    &lt;div class=&quot;col-3 t-6 p-12&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;t-3 offset-t-3&quot;&gt;.t-3 .offset-t-3&lt;/div&gt;
+    &lt;div class=&quot;p-6 offset-t-6&quot;&gt;.p-6 .offset-t-6&lt;/div&gt;
 &lt;/div&gt;
 </code>
 </pre>
@@ -447,6 +534,95 @@
 
                 <section id="lists">
                     <h1 class="headline">Lists</h1>
+
+                    <div>
+                        <ul class="list">
+                            <li class="item">Item 1</li>
+                            <li class="item">Item 2</li>
+                            <li class="item">
+                                <img src="/img/avatar.jpg" />
+                                <div class="content single-line">
+                                    <p>Item 3</p>
+                                    <p class="body-1">Some text of item 3 as Lorem ipsum</p>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <img src="/img/avatar.jpg" />
+                                <div class="content">
+                                    <p>Item 4</p>
+                                    <p class="body-1">Some text of item 4 as Lorem ipsum dolor sit amet, 
+                                    <br />consectetur adipiscing elit. Maecenas id pellentesque est</p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="list">
+                            <li class="item expansion">
+                                <a>Item expansion 1</a>
+                                <div class="content">
+                                    <ul class="list">
+                                        <li class="item">Item 1</li>
+                                        <li class="item">Item 2</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="item expansion">
+                                <a>Item expansion 2</a>
+                                <div class="content">
+                                    <ul class="list">
+                                        <li class="item">Item 1</li>
+                                        <li class="item">Item 2</li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+<pre class="line-numbers">
+<code class="language-markup">&lt;ul class=&quot;list&quot;&gt;
+    &lt;li class=&quot;item&quot;&gt;Item 1&lt;/li&gt;
+    &lt;li class=&quot;item&quot;&gt;Item 2&lt;/li&gt;
+    &lt;li class=&quot;item&quot;&gt;
+        &lt;img src=&quot;avatar.jpg&quot; /&gt;
+        &lt;div class=&quot;content single-line&quot;&gt;
+            &lt;p&gt;Item 3&lt;/p&gt;
+            &lt;p class=&quot;body-1&quot;&gt;Some text of item 3 as Lorem ipsum&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;item&quot;&gt;
+        &lt;img src=&quot;avatar.jpg&quot; /&gt;
+        &lt;div class=&quot;content&quot;&gt;
+            &lt;p&gt;Item 4&lt;/p&gt;
+            &lt;p class=&quot;body-1&quot;&gt;Some text of item 4 as Lorem ipsum dolor sit amet, 
+            &lt;br /&gt;consectetur adipiscing elit. Maecenas id pellentesque est&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ul class=&quot;list&quot;&gt;
+    &lt;li class=&quot;item expansion&quot;&gt;
+        &lt;a&gt;Item expansion 1&lt;/a&gt;
+        &lt;div class=&quot;content&quot;&gt;
+            &lt;ul class=&quot;list&quot;&gt;
+                &lt;li class=&quot;item&quot;&gt;Item 1&lt;/li&gt;
+                &lt;li class=&quot;item&quot;&gt;Item 2&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;item expansion&quot;&gt;
+        &lt;a&gt;Item expansion 2&lt;/a&gt;
+        &lt;div class=&quot;content&quot;&gt;
+            &lt;ul class=&quot;list&quot;&gt;
+                &lt;li class=&quot;item&quot;&gt;Item 1&lt;/li&gt;
+                &lt;li class=&quot;item&quot;&gt;Item 2&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+</code>
+</pre>
+                    </div>
 
                 </section>
 

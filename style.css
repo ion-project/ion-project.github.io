@@ -3,9 +3,6 @@
 }
 
 /* Toolbar */
-.navbar + .toolbar .icon{
-    color: #FFFFFF;
-}
 .logo-mini{
     opacity: 1;
     margin: 16px;
@@ -79,7 +76,7 @@
 }
 
 /* Documentation */
-.documentation .box > section#intro ~ section{
+.documentation .box > section#intro ~ section, .personalization .box > section#personalization ~ section{
     padding-top: 80px;
 }
 .documentation pre{
