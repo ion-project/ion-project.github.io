@@ -1,6 +1,10 @@
-# IonDesign version 0.1
+# IonDesign version 0.12
 
-## version 0.11
+## version 0.12 2017-07-14
+- add Material colors text
+- improve layout and components styles
+
+## version 0.11 2017-07-08
 - add offset spaces to grid system
 
 ## version 0.1 2017-07-03

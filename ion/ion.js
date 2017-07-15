@@ -1368,16 +1368,26 @@ chipList = function(event){
         event.target.value = "";
     }
 
-    if(event.keyCode == 8 && !$input.value().length){
-        $lastChip = $chips.find(".chip:last-of-type");
+    if(event.keyCode == 8){
+        if(!$input.value().length){
+            $lastChip = $chips.find(".chip:last-of-type");
 
-        if($lastChip.length){
-            $lastChip.remove();
+            if($lastChip.length){
+                if($lastChip.hasClass("active")){
+                    $lastChip.remove();
 
-            removeEvent.chip = $lastChip[0];
+                    removeEvent.chip = $lastChip[0];
 
-            $chips.emit(removeEvent);
+                    $chips.emit(removeEvent);
+                }
+                else{
+                    $lastChip.addClass("active");
+                }
+            }
         }
+    }
+    else{
+        $chips.find(".chip.active").removeClass("active");
     }
 }
 
