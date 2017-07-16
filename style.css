@@ -71,6 +71,12 @@
 }
 
 /* Personalization */
+#icons .icon{
+    font-size: 32px;
+}
+#icons .col-1{
+    margin-top: 16px;
+}
 #color ul, #color ul li{
     margin: 0px;
     padding: 0px;
