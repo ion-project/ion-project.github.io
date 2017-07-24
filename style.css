@@ -1,6 +1,10 @@
 .no-elevation{
     box-shadow: none;
 }
+pre[class*="language-"]{
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
 
 /* Toolbar */
 .logo-mini{
@@ -56,7 +60,7 @@
 }
 
 /* Documentation */
-.documentation .box > section#intro ~ section, .personalization .box > section#personalization ~ section, .components .box > section#components ~ section{
+.documentation .box > section#intro ~ section, .personalization .box > section#personalization ~ section, .components .box > section#components ~ section, .javascript .box > section#javascript ~ section{
     padding-top: 80px;
 }
 .documentation pre{
@@ -76,6 +80,9 @@
 }
 #icons .col-1{
     margin-top: 16px;
+}
+#color .col-4{
+    margin-top: 32px;
 }
 #color ul, #color ul li{
     margin: 0px;
