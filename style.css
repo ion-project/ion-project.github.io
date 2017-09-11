@@ -60,10 +60,12 @@ pre[class*="language-"]{
 }
 
 /* Documentation */
-.documentation .box > section#intro ~ section, .personalization .box > section#personalization ~ section, .components .box > section#components ~ section, .javascript .box > section#javascript ~ section{
-    padding-top: 80px;
+.documentation .list li{
+    margin-bottom: 16px;
 }
-.documentation pre{
+
+/* Components */
+.components pre{
     margin-top: 32px;
     margin-bottom: 32px;
 }
@@ -75,6 +77,9 @@ pre[class*="language-"]{
 }
 
 /* Personalization */
+.personalization .box > section#personalization ~ section, .components .box > section#components ~ section, .javascript .box > section#javascript ~ section{
+    padding-top: 80px;
+}
 #icons .icon{
     font-size: 32px;
 }
