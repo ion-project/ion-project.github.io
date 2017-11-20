@@ -8,18 +8,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <link href="/favicon.ico" type="image/x-icon" rel="icon shortcut" />
-
-        <link href="/ion/ion.min.css" type="text/css" rel="stylesheet" />
-        <link href="/highlight/style.css" type="text/css" rel="stylesheet" />
-        <link href="/style.css" type="text/css" rel="stylesheet" />
     </head>
 
     <body>
         <aside class="navbar open">
             <ul class="list">
-                <a href="/introduction"><li class="item ripple">Introdution</li></a>
+                <a href="/started"><li class="item ripple">Get started</li></a>
                 <a href="/documentation"><li class="item ripple">Documentation</li></a>
-                <li class="item ripple expansion">
+                <li class="item expansion">
                     <a class="ripple">Components</a>
                     
                     <div class="content">
@@ -44,7 +40,7 @@
                         </ul>
                     </div>
                 </li>
-                <li class="item ripple expansion">
+                <li class="item expansion">
                     <a class="ripple">Personalization</a>
                     <div class="content">
                         <ul class="list">
@@ -54,48 +50,7 @@
                         </ul>
                     </div>
                 </li>
-                <li class="item ripple expansion">
-                    <a class="ripple">Javascript</a>
-                    <div class="content">
-                        <ul class="list">
-                            <a href="/javascript/#create-event"><li class="item">createEvent</li></a>
-                            <a href="/javascript/#dialog"><li class="item">dialog</li></a>
-                            <a href="/javascript/#filter"><li class="item">filter</li></a>
-                            <a href="/javascript/#get"><li class="item">get</li></a>
-                            <a href="/javascript/#is-unique"><li class="item">isUnique</li></a>
-                            <a href="/javascript/#matches"><li class="item">matches</li></a>
-                            <a href="/javascript/#navbar"><li class="item">navbar</li></a>
-                            <a href="/javascript/#toast"><li class="item">toast</li></a>
-                            <a href="/javascript/#add-class"><li class="item">addClass</li></a>
-                            <a href="/javascript/#append"><li class="item">append</li></a>
-                            <a href="/javascript/#children"><li class="item">children</li></a>
-                            <a href="/javascript/#chips"><li class="item">chips</li></a>
-                            <a href="/javascript/#each"><li class="item">each</li></a>
-                            <a href="/javascript/#emit"><li class="item">emit</li></a>
-                            <a href="/javascript/#find"><li class="item">find</li></a>
-                            <a href="/javascript/#get-attr"><li class="item">getAttr</li></a>
-                            <a href="/javascript/#has-class"><li class="item">hasClass</li></a>
-                            <a href="/javascript/#html"><li class="item">html</li></a>
-                            <a href="/javascript/#insert-after"><li class="item">insertAfter</li></a>
-                            <a href="/javascript/#insert-before"><li class="item">insertBefore</li></a>
-                            <a href="/javascript/#next"><li class="item">next</li></a>
-                            <a href="/javascript/#on"><li class="item">on</li></a>
-                            <a href="/javascript/#parent"><li class="item">parent</li></a>
-                            <a href="/javascript/#parents"><li class="item">parents</li></a>
-                            <a href="/javascript/#prepend"><li class="item">prepend</li></a>
-                            <a href="/javascript/#prev"><li class="item">prev</li></a>
-                            <a href="/javascript/#position"><li class="item">position</li></a>
-                            <a href="/javascript/#remove"><li class="item">remove</li></a>
-                            <a href="/javascript/#remove-attr"><li class="item">removeAttr</li></a>
-                            <a href="/javascript/#remove-class"><li class="item">removeClass</li></a>
-                            <a href="/javascript/#set-attr"><li class="item">setAttr</li></a>
-                            <a href="/javascript/#style"><li class="item">style</li></a>
-                            <a href="/javascript/#tabs"><li class="item">tabs</li></a>
-                            <a href="/javascript/#toggle-class"><li class="item">toggleClass</li></a>
-                            <a href="/javascript/#value"><li class="item">value</li></a>
-                        </ul>
-                    </div>
-                </li>
+                <a href="/javascript"><li class="item ripple">Javascript</li></a>
                 <li class="item ripple">About</li>
             </ul>
         </aside>
@@ -114,159 +69,316 @@
                 <section id="javascript">
                     <h1 class="display-1">Javascript</h1>
 
-                    <p>A parte interativa do IonDesign é divida em duas seções: IonFramework e IonSelector, elas são responsáveis por cumprir tarefas diferentes que se complementam no trabalho de assegurar a experiência do usuário. Abaixo é possível ver a lista de funções da API.</p>
+                    <p>IonFramework and IonSelector are part of interactive set of IonDesign, they are responsible to ensuring the user experience. Below you can see the list of API functions.</p>
                 </section>
 
                 <section>
                     <h2 class="headline">IonFramework</h2>
 
-                    <p>O IonFramework é o controle de todos os componentes do IonDesign, assim como o gestor de interações do usuário. Ele é responsável por garantir uma melhor experiência do usuário, a partir dele é possível, por exemplo, mostrar diálogos, alertas e avisos, de forma geral, deixar mais rica a experiência do usuário com sua aplicação.</p>
+                    <p>IonFramework controls the components of IonDesign, as well as the user interaction events. It is responsible for ensuring a better user experience, from it is possible, for example, to display dialogs, alerts and warnings. In general, make the user experience richer in your application.</p>
                 </section>
 
-                <section id="create-event">
+                <section id="create-event" class="section">
                     <h1 class="title">Ion.createEvent()</h1>
+                    
                 </section>
 
-                <section id="dialog">
-                    <h1 class="title">Ion.dialog()</h1>
+                <section id="dialog" class="section">
+                    <h1 class="title">Ion.dialog(data)</h1>
+
+                    <p>Shows a dialog.</p>
+
+                    <div class="responsive">
+                        <table class="table">
+                            <tr>
+                                <th>Parameter</th>
+                                <th>Type</th>
+                                <th>Description</th>
+                            </tr>
+                            <tr>
+                                <td>data</td>
+                                <td>Object</td>
+                                <td>
+                                    An object with dialog properties, with the attributes below:
+                                    <p><b class="body-2">title (string):</b> The title of the dialog</p>
+                                    <p><b class="body-2">subtitle (string):</b> The subtitle of the dialog</p>
+                                    <p><b class="body-2">content (string):</b> The main content of the dialog</p>
+                                    <p><b class="body-2">affirmativeText (string):</b> The text of the affirmation button</p>
+                                    <p><b class="body-2">dismissiveText (string):</b> The text of the deny button</p>
+                                    <p><b class="body-2">dismissible (boolean):</b> If true, The dialog is dismissed on press the overlay</p>
+                                    <p><b class="body-2">class (string):</b> An css class for customization</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <nav class="tabs" data-tabs="dialog-tabs">
+                        <a class="tab" data-tab-id="dialog-html">HTML</a>
+                        <a class="tab" data-tab-id="dialog-javascript">JAVASCRIPT</a>
+                        <a class="tab" data-tab-id="dialog-result">RESULT</a>
+                    </nav>
+
+                    <div id="javascript-tabs" class="tabs-content">
+                        <section id="dialog-html">
+
+                        </section>
+                        <section id="dialog-javascript">
+
+                        </section>
+                        <section id="dialog-result">
+
+                        </section>
+                    </div>
                 </section>
 
-                <section id="filter">
-                    <h1 class="title">Ion.filter()</h1>
+                <section id="filter" class="section">
+                    <h1 class="title">Ion.filter(array, key, filter)</h1>
+
+                    <p>Returns a new array with the matches of the filter applied to the fields chosen.</p>
+
+                    <div class="responsive">
+                        <table class="table">
+                            <tr>
+                                <th>Parameter</th>
+                                <th>Type</th>
+                                <th>Description</th>
+                            </tr>
+                            <tr>
+                                <td>array</td>
+                                <td>Array</td>
+                                <td>The array of objects that will be filtered</td>
+                            </tr>
+                            <tr>
+                                <td>key</td>
+                                <td>Array | string</td>
+                                <td>A field or an array of fields of the array</td>
+                            </tr>
+                            <tr>
+                                <td>filter</td>
+                                <td>string</td>
+                                <td>The string to be searched for</td>
+                            </tr>
+                        </table>
+                    </div>
+
+<pre class="line-numbers"><code class="language-javascript">var numbers = [{
+    number: 1,
+    name: "One"
+},
+{
+    number: 2,
+    name: "Two"
+},
+{
+    number: 3,
+    name: "Three"
+},
+{
+    number: 4,
+    name: "Four"
+},
+{
+    number: 5,
+    name: "Five"
+}];
+
+Ion.filter(numbers, "name", "T"); //[{number: 2, name: "Two"}, {number: 3, name: "Three"}]</code></pre>
                 </section>
 
-                <section id="get">
-                    <h1 class="title">Ion.get()</h1>
+                <section id="get" class="section">
+                    <h1 class="title">Ion.get($element, context)</h1>
+
+                    <p>Instances the IonSelector for an element based on a context element or the document.</p>
+                
+                    <div class="responsive">
+                        <table class="table">
+                            <tr>
+                                <th>Parameter</th>
+                                <th>Type</th>
+                                <th>Description</th>
+                            </tr>
+                            <tr>
+                                <td>$element</td>
+                                <td>Array | Element | string</td>
+                                <td>An css selector string or an element or array of elements</td>
+                            </tr>
+                            <tr>
+                                <td>context</td>
+                                <td>Element</td>
+                                <td>The base element for query. Default is document</td>
+                            </tr>
+                        </table>
+                    </div>
+
+<pre class="line-numbers"><code class="language-javascript">Ion.get("p");</code></pre>
                 </section>
 
-                <section id="is-unique">
+                <section id="http" class="section">
+                    <h1 class="title">Ion.http()</h1>
+                </section>
+
+                <section id="is-unique" class="section">
                     <h1 class="title">Ion.isUnique()</h1>
                 </section>
 
-                <section id="matches">
+                <section id="matches" class="section">
                     <h1 class="title">Ion.matches()</h1>
                 </section>
 
-                <section id="navbar">
+                <section id="navbar" class="section">
                     <h1 class="title">Ion.navbar</h1>
                 </section>
 
-                <section id="dialog">
+                <section id="dialog" class="section">
                     <h1 class="title">Ion.toast()</h1>
                 </section>
                 
                 <section>
                     <h2 class="headline">IonSelector</h2>
                 
-                    <p>IonSelector é a parte da API Ion para interação com o DOM (Document Object Model), em outras palavas, o documento  Web. Através desta APi é possível criar, remover e editar os elementos HTML da página de uma maneira mais fácil.</p>
+                    <p>IonSelector is the part of the IonDesign API for interacting with the Document Object Model (DOM), in other words, the Web document. Through this APi it is possible to create, remove and edit the HTML elements of the page in an easier way.</p>
                 </section>
 
-                <section id="add-class">
-                    <h1 class="title">Ion.get().addClass()</h1>
+                <section id="add-class" class="section">
+                    <h1 class="title">.addClass()</h1>
                 </section>
 
-                <section id="append">
-                    <h1 class="title">Ion.get().append()</h1>
+                <section id="append" class="section">
+                    <h1 class="title">.append()</h1>
                 </section>
 
-                <section id="children">
-                    <h1 class="title">Ion.get().children()</h1>
+                <section id="append-to" class="section">
+                    <h1 class="title">.appendTo()</h1>
                 </section>
 
-                <section id="chips">
-                    <h1 class="title">Ion.get().chips()</h1>
+                <section id="children" class="section">
+                    <h1 class="title">.children()</h1>
                 </section>
 
-                <section id="each">
-                    <h1 class="title">Ion.get().each()</h1>
+                <section id="chips" class="section">
+                    <h1 class="title">.chips()</h1>
                 </section>
 
-                <section id="emit">
-                    <h1 class="title">Ion.get().emit()</h1>
+                <section id="clone" class="section">
+                    <h1 class="title">.clone()</h1>
                 </section>
 
-                <section id="find">
-                    <h1 class="title">Ion.get().find()</h1>
+                <section id="each" class="section">
+                    <h1 class="title">.each()</h1>
                 </section>
 
-                <section id="get-attr">
-                    <h1 class="title">Ion.get().getAttr()</h1>
+                <section id="emit" class="section">
+                    <h1 class="title">.emit()</h1>
                 </section>
 
-                <section id="has-class">
-                    <h1 class="title">Ion.get().hasClass()</h1>
+                <section id="find" class="section">
+                    <h1 class="title">.find()</h1>
                 </section>
 
-                <section id="html">
-                    <h1 class="title">Ion.get().html()</h1>
+                <section id="get-attr" class="section">
+                    <h1 class="title">.getAttr()</h1>
                 </section>
 
-                <section id="insert-after">
-                    <h1 class="title">Ion.get().insertAfter()</h1>
+                <section id="has-class" class="section">
+                    <h1 class="title">.hasClass()</h1>
                 </section>
 
-                <section id="insert-before">
-                    <h1 class="title">Ion.get().insertBefore()</h1>
+                <section id="html" class="section">
+                    <h1 class="title">.html()</h1>
                 </section>
 
-                <section id="next">
-                    <h1 class="title">Ion.get().next()</h1>
+                <section id="insert-after" class="section">
+                    <h1 class="title">.insertAfter()</h1>
                 </section>
 
-                <section id="on">
-                    <h1 class="title">Ion.get().on()</h1>
+                <section id="insert-before" class="section">
+                    <h1 class="title">.insertBefore()</h1>
                 </section>
 
-                <section id="parent">
-                    <h1 class="title">Ion.get().parent()</h1>
+                <section id="next" class="section">
+                    <h1 class="title">.next()</h1>
                 </section>
 
-                <section id="parents">
-                    <h1 class="title">Ion.get().parents()</h1>
+                <section id="on" class="section">
+                    <h1 class="title">.on()</h1>
                 </section>
 
-                <section id="prepend">
-                    <h1 class="title">Ion.get().prepend()</h1>
+                <section id="parent" class="section">
+                    <h1 class="title">.parent()</h1>
                 </section>
 
-                <section id="prev">
-                    <h1 class="title">Ion.get().prev()</h1>
+                <section id="parents" class="section">
+                    <h1 class="title">.parents()</h1>
                 </section>
 
-                <section id="position">
-                    <h1 class="title">Ion.get().position()</h1>
+                <section id="prepend" class="section">
+                    <h1 class="title">.prepend()</h1>
                 </section>
 
-                <section id="remove">
-                    <h1 class="title">Ion.get().remove()</h1>
+                <section id="prepend-to" class="section">
+                    <h1 class="title">.prependTo()</h1>
                 </section>
 
-                <section id="remove-attr">
-                    <h1 class="title">Ion.get().removeAttr()</h1>
+                <section id="prev" class="section">
+                    <h1 class="title">.prev()</h1>
                 </section>
 
-                <section id="remove-class">
-                    <h1 class="title">Ion.get().removeClass()</h1>
+                <section id="position" class="section">
+                    <h1 class="title">.position()</h1>
                 </section>
 
-                <section id="set-attr">
-                    <h1 class="title">Ion.get().setAttr()</h1>
+                <section id="remove" class="section">
+                    <h1 class="title">.remove()</h1>
                 </section>
 
-                <section id="style">
-                    <h1 class="title">Ion.get().style()</h1>
+                <section id="remove-attr" class="section">
+                    <h1 class="title">.removeAttr()</h1>
                 </section>
 
-                <section id="tabs">
-                    <h1 class="title">Ion.get().tabs()</h1>
+                <section id="remove-class" class="section">
+                    <h1 class="title">.removeClass()</h1>
                 </section>
 
-                <section id="toggle-class">
-                    <h1 class="title">Ion.get().toggleClass()</h1>
+                <section id="set-attr" class="section">
+                    <h1 class="title">.setAttr()</h1>
                 </section>
 
-                <section id="value">
-                    <h1 class="title">Ion.get().value()</h1>
+                <section id="style" class="section">
+                    <h1 class="title">.style()</h1>
+                </section>
+
+                <section id="tabs" class="section">
+                    <h1 class="title">.tabs()</h1>
+                </section>
+
+                <section id="toggle-class" class="section">
+                    <h1 class="title">.toggleClass()</h1>
+                </section>
+
+                <section id="value" class="section">
+                    <h1 class="title">.value()</h1>
+                </section>
+
+                <section id="view" class="section">
+                    <h1 class="title">.view()</h1>
+                </section>
+
+                <section>
+                    <h2 class="headline">IonView</h2>
+
+                    <p>IonView provides a way to build dynamic and reactive user interfaces. Through declarative syntax it is possible to show or hide elements, display text dinamically, list content and handle user action.</p>
+                </section>
+
+                <section id="view-get" class="section">
+                    <h1 class="title">.get()</h1>
+                </section>
+
+                <section id="view-set" class="section">
+                    <h1 class="title">.set()</h1>
+                </section>
+
+                <section id="view-update" class="section">
+                    <h1 class="title">.update()</h1>
                 </section>
             </div>
 
