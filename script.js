@@ -20,7 +20,7 @@ window.onload = function(){
         Ion.get("head").append(link);
     }
 
-    Ion.get("body").style({display: "block"});
+    setTimeout(function(){document.body.style.display = "block";});
 }
 
 Ion.get(document).on("scroll", function(){
