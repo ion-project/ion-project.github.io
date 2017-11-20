@@ -8,7 +8,7 @@ css = [
 
 document.body.style.display = "none";
 
-document.onload = function(){
+window.onload = function(){
     var i = 0;
     
     for(; i < css.length; i = i + 1){
