@@ -1,7 +1,6 @@
 var currentSection = "", css;
 
 css = [
-    "ion/ion.min.css",
     "highlight/style.css",
     "style.css"
 ];
