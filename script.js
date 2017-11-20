@@ -6,11 +6,11 @@ css = [
     "style.css"
 ];
 
-Ion.get("body").style({display: "none"});
+document.body.style.display = "none";
 
-Ion.get(window).on("load", function(){
+document.onload = function(){
     var i = 0;
-
+    
     for(; i < css.length; i = i + 1){
         var link = document.createElement("link");
         link.href = css[i];
@@ -21,7 +21,7 @@ Ion.get(window).on("load", function(){
     }
 
     Ion.get("body").style({display: "block"});
-});
+}
 
 Ion.get(document).on("scroll", function(){
     var scroll = document.body.scrollTop || document.documentElement.scrollTop,
