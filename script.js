@@ -1,9 +1,12 @@
 var currentSection = "", css;
 
 css = [
+    "ion/ion.min.css",
     "highlight/style.css",
     "style.css"
 ];
+
+Ion.get("body").style({display: "none"});
 
 Ion.get(window).on("load", function(){
     var i = 0;
@@ -14,10 +17,10 @@ Ion.get(window).on("load", function(){
         link.type = "text/css";
         link.rel = "stylesheet";
 
-        console.log("Teste");
-
         Ion.get("head").append(link);
     }
+
+    Ion.get("body").style({display: "block"});
 });
 
 Ion.get(document).on("scroll", function(){
