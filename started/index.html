@@ -1,0 +1,124 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Get started - Ion</title>
+
+        <meta charset="UTF-8" />
+        <meta name="theme-color" content="#212121" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link href="/favicon.ico" type="image/x-icon" rel="icon shortcut" />
+    </head>
+
+    <body>
+        <aside class="navbar open">
+            <ul class="list">
+                <a href="/started"><li class="item ripple">Get started</li></a>
+                <a href="/documentation"><li class="item ripple">Documentation</li></a>
+                <li class="item expansion">
+                    <a class="ripple">Components</a>
+                    
+                    <div class="content">
+                        <ul class="list">
+                            <a href="/components/#buttons"><li class="item">Buttons</li></a>
+                            <a href="/components/#cards"><li class="item">Cards</li></a>
+                            <a href="/components/#chips"><li class="item">Chips</li></a>
+                            <a href="/components/#dialogs"><li class="item">Dialogs</li></a>
+                            <a href="/components/#dividers"><li class="item">Dividers</li></a>
+                            <a href="/components/#expansion-panels"><li class="item">Expansion panels</li></a>
+                            <a href="/components/#grid"><li class="item">Grid lists</li></a>
+                            <a href="/components/#lists"><li class="item">Lists</li></a>
+                            <a href="/components/#menus"><li class="item">Menus</li></a>
+                            <a href="/components/#progress"><li class="item">Progress & activitys</li></a>
+                            <a href="/components/#selection-controls"><li class="item">Selection controls</li></a>
+                            <a href="/components/#toasts"><li class="item">Snackbars & toasts</li></a>
+                            <a href="/components/#tables"><li class="item">Tables</li></a>
+                            <a href="/components/#tabs"><li class="item">Tabs</li></a>
+                            <a href="/components/#text-fields"><li class="item">Text fields</li></a>
+                            <a href="/components/#toolbars"><li class="item">Toolbars</li></a>
+                            <a href="/components/#tooltips"><li class="item">Tooltips</li></a>
+                        </ul>
+                    </div>
+                </li>
+                <li class="item expansion">
+                    <a class="ripple">Personalization</a>
+                    <div class="content">
+                        <ul class="list">
+                            <a href="/personalization/#color"><li class="item">Color</li></a>
+                            <a href="/personalization/#icons"><li class="item">Icons</li></a>
+                            <a href="/personalization/#typography"><li class="item">Typography</li></a>
+                        </ul>
+                    </div>
+                </li>
+                <a href="/javascript"><li class="item ripple">Javascript</li></a>
+                <li class="item ripple">About</li>
+            </ul>
+        </aside>
+        
+        <header class="toolbar fixed grey-900 container">
+            <a class="radial hide-on-d" onclick="Ion.navbar.toggle()"><i class="icon">&#xE5D2;</i></a>
+            <div>
+                <a href="/"><img src="/img/ion_logo.svg" class="logo-mini" /></a>
+            </div>
+        </header>
+
+        <main class="container">
+
+            <div class="box">
+                <section>
+                    <h1 class="display-1">Get started</h1>
+
+                    <p>You could start a Ion project by downloading the latest version of the framework.</p>
+                    <a href="https://github.com/ion-project/ion-design/raw/master/src/ion.zip" class="button raised blue-500" download>DOWNLOAD</a> <span class="caption">Version 0.12.5 - 267 KB</span>
+                    <p>After finishing the download unzip the file to some directory of your preference. The uncompressed files are a set of css and javascript codes, in addition to the fonts. Your project structure will look like this:</p>
+
+<pre class="line-numbers"><code class="language-markup">/Your project
+    /ion
+        /fonts
+            material-icons.eot
+            material-icons.ijmap
+            material-icons.ttf
+            material-icons.woff
+            material-icons.woff2
+        ion.css
+        ion.js
+        ion.min.css
+        ion.min.js</code></pre>
+
+                    <p>It is recommended to use the minified files (which contains ".min" in the name) if you need more performance and faster loading on your pages. Another tip is to put the javascript files at the end of your pages.</p>
+
+                    <h2 class="headline">Basic HTML</h2>
+
+                    <p>To start with IonDesign you could implement the code below on your web page. Just make sure that all your files are being correctly referenced in the code.</p>
+
+<pre class="line-numbers"><code class="language-markup">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+
+        &lt;link href=&quot;ion/ion.css&quot; type=&quot;text/css&quot; rel=&quot;stylesheet&quot; /&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;/body&gt;
+    &lt;script src=&quot;ion/ion.js&quot;&gt;&lt;/script&gt;
+&lt;/html&gt;</code></pre>
+                </section>
+            </div>
+
+            <div class="center">
+                <a href="/documentation" class="button raised blue-500">GO TO DOCS</a>
+            </div>
+
+            <footer>
+                <div class="box center">
+                    Copyright © 2016-2017 Ion
+                </div>
+            </footer>
+
+        </main>
+    </body>
+
+    <script src="/ion/ion.min.js"></script>
+    <script src="/highlight/index.js"></script>
+    <script src="/script.js"></script>
+</html>

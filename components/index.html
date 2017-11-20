@@ -8,18 +8,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <link href="/favicon.ico" type="image/x-icon" rel="icon shortcut" />
-
-        <link href="/ion/ion.min.css" type="text/css" rel="stylesheet" />
-        <link href="/highlight/style.css" type="text/css" rel="stylesheet" />
-        <link href="/style.css" type="text/css" rel="stylesheet" />
     </head>
 
     <body>
         <aside class="navbar open">
             <ul class="list">
-                <a href="/introduction"><li class="item ripple">Introdution</li></a>
+                <a href="/started"><li class="item ripple">Get started</li></a>
                 <a href="/documentation"><li class="item ripple">Documentation</li></a>
-                <li class="item ripple expansion">
+                <li class="item expansion">
                     <a class="ripple">Components</a>
                     
                     <div class="content">
@@ -44,7 +40,7 @@
                         </ul>
                     </div>
                 </li>
-                <li class="item ripple expansion">
+                <li class="item expansion">
                     <a class="ripple">Personalization</a>
                     <div class="content">
                         <ul class="list">
@@ -54,48 +50,7 @@
                         </ul>
                     </div>
                 </li>
-                <li class="item ripple expansion">
-                    <a class="ripple">Javascript</a>
-                    <div class="content">
-                        <ul class="list">
-                            <a href="/javascript/#create-event"><li class="item">createEvent</li></a>
-                            <a href="/javascript/#dialog"><li class="item">dialog</li></a>
-                            <a href="/javascript/#filter"><li class="item">filter</li></a>
-                            <a href="/javascript/#get"><li class="item">get</li></a>
-                            <a href="/javascript/#is-unique"><li class="item">isUnique</li></a>
-                            <a href="/javascript/#matches"><li class="item">matches</li></a>
-                            <a href="/javascript/#navbar"><li class="item">navbar</li></a>
-                            <a href="/javascript/#toast"><li class="item">toast</li></a>
-                            <a href="/javascript/#add-class"><li class="item">addClass</li></a>
-                            <a href="/javascript/#append"><li class="item">append</li></a>
-                            <a href="/javascript/#children"><li class="item">children</li></a>
-                            <a href="/javascript/#chips"><li class="item">chips</li></a>
-                            <a href="/javascript/#each"><li class="item">each</li></a>
-                            <a href="/javascript/#emit"><li class="item">emit</li></a>
-                            <a href="/javascript/#find"><li class="item">find</li></a>
-                            <a href="/javascript/#get-attr"><li class="item">getAttr</li></a>
-                            <a href="/javascript/#has-class"><li class="item">hasClass</li></a>
-                            <a href="/javascript/#html"><li class="item">html</li></a>
-                            <a href="/javascript/#insert-after"><li class="item">insertAfter</li></a>
-                            <a href="/javascript/#insert-before"><li class="item">insertBefore</li></a>
-                            <a href="/javascript/#next"><li class="item">next</li></a>
-                            <a href="/javascript/#on"><li class="item">on</li></a>
-                            <a href="/javascript/#parent"><li class="item">parent</li></a>
-                            <a href="/javascript/#parents"><li class="item">parents</li></a>
-                            <a href="/javascript/#prepend"><li class="item">prepend</li></a>
-                            <a href="/javascript/#prev"><li class="item">prev</li></a>
-                            <a href="/javascript/#position"><li class="item">position</li></a>
-                            <a href="/javascript/#remove"><li class="item">remove</li></a>
-                            <a href="/javascript/#remove-attr"><li class="item">removeAttr</li></a>
-                            <a href="/javascript/#remove-class"><li class="item">removeClass</li></a>
-                            <a href="/javascript/#set-attr"><li class="item">setAttr</li></a>
-                            <a href="/javascript/#style"><li class="item">style</li></a>
-                            <a href="/javascript/#tabs"><li class="item">tabs</li></a>
-                            <a href="/javascript/#toggle-class"><li class="item">toggleClass</li></a>
-                            <a href="/javascript/#value"><li class="item">value</li></a>
-                        </ul>
-                    </div>
-                </li>
+                <a href="/javascript"><li class="item ripple">Javascript</li></a>
                 <li class="item ripple">About</li>
             </ul>
         </aside>
@@ -113,13 +68,13 @@
                 <section id="components">
                     <h1 class="display-1">Components</h1>
 
-
+                    <p>The IonDesign components based on Material Design are projected to compose accessible, reactive, and unified interface and experience. The natural interactive, use of lights, movement, surface, shapes, textures and colors are key of this design philosophy.</p>
                 </section>
 
-                <section id="buttons">
+                <section id="buttons" class="section">
                     <h1 class="headline">Buttons</h1>
                     
-                    <p>Botões são os componentes ideais para gerar alguma reação ao clique do usuário. No Material design os botões são divididos entre raised, flat e os float action buttons.</p>
+                    <p>Buttons are the ideal components to trigger an ink reaction on the user press. In the Material design the buttons are divided between raised, flat and float action buttons.</p>
                     <div>
                         <button class="button flat">BUTTON</button>
                         <button class="button raised">BUTTON</button>
@@ -128,10 +83,9 @@
                         <button class="button raised" disabled>DISABLED BUTTON</button>
                         <button class="button raised">ICON BUTTON <i class="icon">&#xE150;</i></button>
                     </div>
-                    <p>Os códigos dos botões acima se parecem com isso.</p>
+                    <p>The code of the buttons above seems like this.</p>
 
-<pre class="line-numbers">
-<code class="language-markup">&lt;button class=&quot;button flat&quot;&gt;BUTTON&lt;/button&gt;
+<pre class="line-numbers"><code class="language-markup">&lt;button class=&quot;button flat&quot;&gt;BUTTON&lt;/button&gt;
     
 &lt;button class=&quot;button raised&quot;&gt;BUTTON&lt;/button&gt;
 
@@ -141,37 +95,33 @@
 
 &lt;button class=&quot;button raised&quot; disabled&gt;DISABLED BUTTON&lt;/button&gt;
 
-&lt;button class=&quot;button raised&quot;&gt;ICON BUTTON &lt;i class=&quot;icon&quot;&gt;&amp;#xE150;&lt;/i&gt;&lt;/button&gt;
-</code>
-</pre>
+&lt;button class=&quot;button raised&quot;&gt;ICON BUTTON &lt;i class=&quot;icon&quot;&gt;&amp;#xE150;&lt;/i&gt;&lt;/button&gt;</code></pre>
                 </section>
 
                 <section>
                     <h1 class="headline">Float action buttons</h1>
 
-                    <p>Float action buttons são focados a representar a principal ação de uma aplicação ou página. Eles vem em dois tamanhos: Padrão ou mini. É recomendado utilizar apenas um por página.</p>
+                    <p>Float action buttons are focused on representing the main action of an application or page. They come in two sizes: Default or mini. It is recommended to use only one per page.</p>
                     <div class="demo-fab">
                         <button class="button fab"><i class="icon">&#xE145;</i></button>
                         <button class="button fab mini"><i class="icon">&#xE145;</i></button>
                         <button class="button fab light-blue-500"><i class="icon">&#xE150;</i></button>
                         <button class="button fab mini yellow-500"><i class="icon">&#xE150;</i></button>
                     </div>
-<pre class="line-numbers">
-<code class="language-markup">&lt;button class=&quot;button fab&quot;&gt;&lt;i class=&quot;icon&quot;&gt;&amp;#xE145;&lt;/i&gt;&lt;/button&gt;
+<pre class="line-numbers"><code class="language-markup">&lt;button class=&quot;button fab&quot;&gt;&lt;i class=&quot;icon&quot;&gt;&amp;#xE145;&lt;/i&gt;&lt;/button&gt;
 
 &lt;button class=&quot;button fab mini&quot;&gt;&lt;i class=&quot;icon&quot;&gt;&amp;#xE145;&lt;/i&gt;&lt;/button&gt;
 
 &lt;button class=&quot;button fab light-blue-500&quot;&gt;&lt;i class=&quot;icon&quot;&gt;&amp;#xE150;&lt;/i&gt;&lt;/button&gt;
 
 &lt;button class=&quot;button fab mini yellow-500&quot;&gt;&lt;i class=&quot;icon&quot;&gt;&amp;#xE150;&lt;/i&gt;&lt;/button&gt;
-</code>
-</pre>
+</code></pre>
                 </section>
 
-                <section id="cards">
+                <section id="cards" class="section">
                     <h1 class="headline">Cards</h1>
 
-                    <p>Você pode usar cards para organizar pequenos conjuntos de imagens ou textos em um bloco chamativo.</p>
+                    <p>You can use cards to organize small sets of pictures or texts in a flashy block.</p>
                 
                     <div>
                         <div class="row">
@@ -211,8 +161,7 @@
                     </div>
 
                     <div>
-<pre class="line-numbers">
-<code class="language-markup">&lt;div class=&quot;row&quot;&gt;
+<pre class="line-numbers"><code class="language-markup">&lt;div class=&quot;row&quot;&gt;
     &lt;div class=&quot;col-3&quot;&gt;
 
         &lt;div class=&quot;card&quot;&gt;
@@ -249,14 +198,14 @@
         &lt;/div&gt;
 
     &lt;/div&gt;
-&lt;/div&gt;
-</code>
-</pre>
+&lt;/div&gt;</code></pre>
                     </div>
                 </section>
 
-                <section id="chips">
+                <section id="chips" class="section">
                     <h1 class="headline">Chips</h1>
+
+                    <p>Chips can display a photo, text, rules or a contact.</p>
 
                     <div class="box">
                         <div class="chips">
@@ -284,8 +233,7 @@
 
                         <div id="chips-tabs" class="tabs-content">
                             <section id="chips-html">
-<pre class="line-numbers">
-<code class="language-markup">&lt;div class=&quot;chips&quot;&gt;
+<pre class="line-numbers"><code class="language-markup">&lt;div class=&quot;chips&quot;&gt;
     &lt;label&gt;
         Contacts
     &lt;/label&gt;
@@ -298,13 +246,10 @@
         &lt;/div&gt;
         &lt;div class=&quot;chip&quot;&gt;&lt;span&gt;email@email.com&lt;/span&gt;&lt;/div&gt;
     &lt;/div&gt;
-&lt;/div&gt;
-</code>
-</pre>
+&lt;/div&gt;</code></pre>
                             </section>
                             <section id="chips-javascript">
-<pre class="line-numbers">
-<code class="language-javascript">Ion.get(".chips").chips({
+<pre class="line-numbers"><code class="language-javascript">Ion.get(".chips").chips({
     placeholder: "Add a contact",
     autocomplete: [
         {text: "Autocomplete contact", subtitle: "Contact", img: "/img/avatar.jpg"},
@@ -315,16 +260,16 @@
     ],
     limit: 4,
     minlengthSearch: 2
-});
-</code>
-</pre>
+});</code></pre>
                             </section>
                         </div>
                     </div>
                 </section>
 
-                <section id="dialogs">
+                <section id="dialogs" class="section">
                     <h1 class="headline">Dialogs</h1>
+
+                    <p>Dialogs may contain decisions for the user, alerts and warnings or information about a specific task.</p>
                     
                     <div>
                         <button class="button raised" onclick="Ion.dialog({
@@ -333,41 +278,38 @@
                                                                     content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id pellentesque est',
                                                                     affirmativeText: 'OK',
                                                                     dismissiveText: 'CANCEL',
+                                                                    dismissible: true,
                                                                     class: 'myClass'
                                                                 });">DIALOG BUTTON</button>
                     </div>
 
                     <div>
-<pre class="line-numbers">
-<code class="language-javascript">Ion.dialog({
+<pre class="line-numbers"><code class="language-javascript">Ion.dialog({
     title: 'Dialog title', 
     subtitle: 'Dialog subtitle',
     content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id pellentesque est',
     affirmativeText: 'OK',
     dismissiveText: 'CANCEL',
     class: 'myClass'
-});
-</code>
-</pre>
+});</code></pre>
                     </div>
                 </section>
 
-                <section id="dividers">
+                <section id="dividers" class="section">
                     <h1 class="headline">Dividers</h1>
 
-                    <p>Dividers podem ser usados para separar contéudos em seções ou para individualizar itens em uma lista.</p>
+                    <p>Dividers can be used to separate contents into sections or to individualize items in a list.</p>
                     <div>
                         <div class="divider"></div>
                     </div>
 
-<pre class="line-numbers">
-<code class="language-markup">&lt;div class=&quot;divider&quot;&gt;&lt;/div&gt;
-</code>
-</pre>
+<pre class="line-numbers"><code class="language-markup">&lt;div class=&quot;divider&quot;&gt;&lt;/div&gt;</code></pre>
                 </section>
 
-                <section id="expansion-panels">
+                <section id="expansion-panels" class="section">
                     <h1 class="headline">Expansion panels</h1>
+
+                    <p>Expansion panels are containers that can include basic information, allow a lightweight edition, or contain an entire card.</p>
 
                     <div>
                         <div class="expansion-panel">
@@ -398,8 +340,7 @@
                         </div>
                     </div>
 
-<pre class="line-numbers">
-<code class="language-markup">&lt;div class=&quot;expansion-panel&quot;&gt;
+<pre class="line-numbers"><code class="language-markup">&lt;div class=&quot;expansion-panel&quot;&gt;
     &lt;div class=&quot;item&quot;&gt;
         &lt;header&gt;
                 Item 1
@@ -424,18 +365,16 @@
             Content of item 3
         &lt;/div&gt;
     &lt;/div&gt;
-&lt;/div&gt;
-</code>
-</pre>
+&lt;/div&gt;</code></pre>
     
                 </section>
 
-                <section id="grid">
+                <section id="grid" class="section">
                     <h1 class="headline">Grid lists</h1>
 
-                    <p>Grids organizam listagens de dados similares e padronizam o layout para uma melhor coopreensão do conteúdo que elas contém.</p>
+                    <p>Grids organize similar data listings and standardize the layout for a better coopreension of the content they contain.</p>
                 
-                    <h2 class="title">Uso básico</h2>
+                    <h2 class="title">Basic usage</h2>
                     <div class="demo-grid">
                         <div class="row center">
                             <div class="col-12 blue-200">12</div>
@@ -468,8 +407,7 @@
                             <div class="col-1 blue-200">1</div>
                         </div>
                     </div>
-<pre class="line-numbers">
-<code class="language-markup">&lt;div class=&quot;row&quot;&gt;
+<pre class="line-numbers"><code class="language-markup">&lt;div class=&quot;row&quot;&gt;
     &lt;div class=&quot;col-12&quot;&gt;12&lt;/div&gt;
     &lt;div class=&quot;col-6&quot;&gt;6&lt;/div&gt;
     &lt;div class=&quot;col-6&quot;&gt;6&lt;/div&gt;
@@ -498,13 +436,11 @@
     &lt;div class=&quot;col-1&quot;&gt;1&lt;/div&gt;
     &lt;div class=&quot;col-1&quot;&gt;1&lt;/div&gt;
     &lt;div class=&quot;col-1&quot;&gt;1&lt;/div&gt;
-&lt;/div&gt;
-</code>
-</pre>
+&lt;/div&gt;</code></pre>
 
-                    <h2 class="title">Grid flexível</h2>
+                    <h2 class="title">Fluid grid</h2>
 
-                    <p>Utilizando a classe <code class="language-css">.col</code> você pode fazer layouts fluídos e que se adaptam ao conteúdo.</p>
+                    <p>Using the <code class="language-css">.col</code> class you can make fluid layouts that fit the content.</p>
 
                     <div class="demo-grid">
                         <div class="row center">
@@ -518,8 +454,7 @@
                             <div class="col purple-200">.col</div>
                         </div>
                     </div>
-<pre class="line-numbers">
-<code class="language-markup">&lt;div class=&quot;row&quot;&gt;
+<pre class="line-numbers"><code class="language-markup">&lt;div class=&quot;row&quot;&gt;
     &lt;div class=&quot;col-6&quot;&gt;6&lt;/div&gt;
     &lt;div class=&quot;col&quot;&gt;.col&lt;/div&gt;
     &lt;div class=&quot;col&quot;&gt;.col&lt;/div&gt;
@@ -528,10 +463,10 @@
     &lt;div class=&quot;col&quot;&gt;.col&lt;/div&gt;
     &lt;div class=&quot;col&quot;&gt;.col&lt;/div&gt;
     &lt;div class=&quot;col&quot;&gt;.col&lt;/div&gt;
-&lt;/div&gt;
-</code>
-</pre>
-                    <h2 class="title">Deslocamentos</h2>
+&lt;/div&gt;</code></pre>
+                    <h2 class="title">Offsets</h2>
+
+                    <p>You can offset grid items to create specific layouts.</p>
 
                     <div class="demo-grid">
                         <div class="row center">
@@ -541,34 +476,31 @@
                         </div>
                     </div>
 
-<pre class="line-numbers">
-<code class="language-markup">&lt;div class=&quot;row&quot;&gt;
+<pre class="line-numbers"><code class="language-markup">&lt;div class=&quot;row&quot;&gt;
     &lt;div class=&quot;col-6 offset-6&quot;&gt;.col-6 .offset-6&lt;/div&gt;
     &lt;div class=&quot;col-4 offset-4&quot;&gt;.col-4 .offset-4&lt;/div&gt;
     &lt;div class=&quot;col-5 offset-1&quot;&gt;.col-5 .offset-1&lt;/div&gt;
-&lt;/div&gt;
-</code>
-</pre>
+&lt;/div&gt;</code></pre>
 
-                    <h2 class="title">Configuração para diferentes telas</h2>
+                    <h2 class="title">Multiple screen configuration</h2>
 
-                    <p>Você pode configurar os grids para terem tamanhos diferentes para cada tipo de tela: Phone (Pequena), Tablet (Média) e Desktop (Grande).</p>
-                    <p>Para isto, basta adicionar o sufixo <code class="language-css">p-</code> ou <code class="language-css">t-</code> ao invés de <code class="language-css">col</code> na classe da coluna. Para o tipo desktop não é preciso fazer alterações, pois é o tamanho padrão.</p>
-                    <p>Os deslocamentos também podem ser ajustados para cada tipo de tela.</p>
-<pre class="line-numbers">
-<code class="language-markup">&lt;div class=&quot;row&quot;&gt;
+                    <p>You can configure the grids to have different sizes for each type of screen: Phone (small), Tablet (medium), and Desktop (large).</p>
+                    <p>To do this, simply add the suffix <code class="language-css">p-</code> or <code class="language-css">t-</code> instead of <code class="language-css">col</code> in column class. For the desktop type no changes are required as it is the default size.</p>
+                    <p>Offsets can also be adjusted for each type of screen.</p>
+
+<pre class="line-numbers"><code class="language-markup">&lt;div class=&quot;row&quot;&gt;
     &lt;div class=&quot;t-3&quot;&gt;.t-3&lt;/div&gt;
     &lt;div class=&quot;p-6&quot;&gt;.p-6&lt;/div&gt;
     &lt;div class=&quot;col-3 t-6 p-12&quot;&gt;&lt;/div&gt;
     &lt;div class=&quot;t-3 offset-t-3&quot;&gt;.t-3 .offset-t-3&lt;/div&gt;
     &lt;div class=&quot;p-6 offset-t-6&quot;&gt;.p-6 .offset-t-6&lt;/div&gt;
-&lt;/div&gt;
-</code>
-</pre>
+&lt;/div&gt;</code></pre>
                 </section>
 
-                <section id="lists">
+                <section id="lists" class="section">
                     <h1 class="headline">Lists</h1>
+
+                    <p>Lists consist of continuous rows of similar data types. They can group text and images together. There are single-line, two-line, three-line list and expasion list.</p>
 
                     <div>
                         <ul class="list">
@@ -590,6 +522,8 @@
                                 </div>
                             </li>
                         </ul>
+
+                        <div class="divider"></div>
 
                         <ul class="list">
                             <li class="item expansion">
@@ -614,8 +548,7 @@
                     </div>
 
                     <div>
-<pre class="line-numbers">
-<code class="language-markup">&lt;ul class=&quot;list&quot;&gt;
+<pre class="line-numbers"><code class="language-markup">&lt;ul class=&quot;list&quot;&gt;
     &lt;li class=&quot;item&quot;&gt;Item 1&lt;/li&gt;
     &lt;li class=&quot;item&quot;&gt;Item 2&lt;/li&gt;
     &lt;li class=&quot;item&quot;&gt;
@@ -654,15 +587,15 @@
             &lt;/ul&gt;
         &lt;/div&gt;
     &lt;/li&gt;
-&lt;/ul&gt;
-</code>
-</pre>
+&lt;/ul&gt;</code></pre>
                     </div>
 
                 </section>
 
-                <section id="menus">
+                <section id="menus" class="section">
                     <h1 class="headline">Menus</h1>
+
+                    <p>Menus display a list of choices with a button, action or other control.</p>
 
                     <div>
                         <div class="menu">
@@ -687,8 +620,7 @@
                         <div id="menus-tabs" class="tabs-content">
                             <section id="menus-html">
                                 
-<pre class="line-numbers">
-<code class="language-markup">&lt;div class=&quot;menu&quot;&gt;
+<pre class="line-numbers"><code class="language-markup">&lt;div class=&quot;menu&quot;&gt;
     &lt;button class=&quot;button flat&quot; &gt;BUTTON&lt;/button&gt;
     
     &lt;div class=&quot;content&quot;&gt;
@@ -698,72 +630,82 @@
             &lt;li class=&quot;item&quot;&gt;Item 3&lt;/li&gt;
         &lt;/ul&gt;
     &lt;/div&gt;
-&lt;/div&gt;
-</code>
-</pre>
+&lt;/div&gt;</code></pre>
                             </section>
                             <section id="menus-javascript">
 
-<pre class="line-numbers">
-<code class="language-javascript">Ion.get("button").on("click", function(event){
+<pre class="line-numbers"><code class="language-javascript">Ion.get("button").on("click", function(event){
     Ion.menu(event);
-});
-</code>
-</pre>
+});</code></pre>
                             </section>
                         </div>
                     </div>
                 </section>
 
-                <section id="progress">
+                <section id="progress" class="section">
                     <h1 class="headline">Progress</h1>
 
+                    <p>Progress indicates a loading on the page. Determinate indicators display how long an oparation will take and indeterminate indicators shows an unspecified wait time.</p>
+
                     <h2 class="title">Progress determinate</h2>
+                    <p>The basic progress determinate shows the progress percentage of a loading.</p>
+                    
                     <div>
                         <div class="progress linear determinate">
                             <span class="bar" style="width: 64%;"></span>
                         </div>
                     </div>
 
-<pre class="line-numbers">
-<code class="language-markup">&lt;div class=&quot;progress linear determinate&quot;&gt;
+<pre class="line-numbers"><code class="language-markup">&lt;div class=&quot;progress linear determinate&quot;&gt;
     &lt;span class=&quot;bar&quot; style=&quot;width: 64%;&quot;&gt;&lt;/span&gt;
-&lt;/div&gt;
-</code>
-</pre>
+&lt;/div&gt;</code></pre>
 
                     <h2 class="title">Progress indeterminate</h2>
+                    <p>Display the loading for an indeterminate period.</p>
                     <div>
                         <div class="progress linear indeterminate">
                             <span class="bar"></span>
                         </div>
                     </div>
 
-<pre class="line-numbers">
-<code class="language-markup">&lt;div class=&quot;progress linear indeterminate&quot;&gt;
+<pre class="line-numbers"><code class="language-markup">&lt;div class=&quot;progress linear indeterminate&quot;&gt;
     &lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;
-&lt;/div&gt;
-</code>
-</pre>
+&lt;/div&gt;</code></pre>
 
                     <h2 class="title">Progress query</h2>
+                    <p>Like a indeterminate progress, but indicates some query task to user.</p>
+
                     <div>
                         <div class="progress linear query">
                             <span class="bar"></span>
                         </div>
                     </div>
 
-<pre class="line-numbers">
-<code class="language-markup">&lt;div class=&quot;progress linear query&quot;&gt;
+<pre class="line-numbers"><code class="language-markup">&lt;div class=&quot;progress linear query&quot;&gt;
     &lt;span class=&quot;bar&quot;&gt;&lt;/span&gt;
-&lt;/div&gt;
-</code>
-</pre>
+&lt;/div&gt;</code></pre>
+
+                    <h2 class="title">Progress buffer</h2>
+                    <p>This progress indicates the consuming percent, the loading percent and the buffer task. For a video for example.</p>
+
+                    <div>
+                        <div class="progress linear buffer">
+                            <span class="bar-1" style="width: 60%;"></span>
+                            <span class="bar-2" style="width: 80%;"></span>
+                        </div>
+                    </div>
+
+<pre class="line-numbers"><code class="language-markup">&lt;div class=&quot;progress linear buffer&quot;&gt;
+    &lt;span class=&quot;bar-1&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;bar-2&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;</code></pre>
 
                 </section>
 
-                <section id="selection-controls">
+                <section id="selection-controls" class="section">
                     <h1 class="headline">Selection controls</h1>
+
+                    <p>Selection controls allow the user to select an option. There are checkboxes, radio buttons ans switches.</p>
 
                     <div>
                         <div class="row center">
@@ -789,8 +731,7 @@
                     </div>
 
                     <div>
-<pre class="line-numbers">
-<code class="language-markup">&lt;label class=&quot;checkbox&quot;&gt;
+<pre class="line-numbers"><code class="language-markup">&lt;label class=&quot;checkbox&quot;&gt;
     &lt;input type=&quot;checkbox&quot; /&gt;
 &lt;/label&gt;
 
@@ -800,30 +741,14 @@
 
 &lt;label class=&quot;switch&quot;&gt;
     &lt;input type=&quot;checkbox&quot; /&gt;
-&lt;/label&gt;
-</code>
-</pre>
+&lt;/label&gt;</code></pre>
                     </div>
                 </section>
 
-                <section id="toasts">
-                    <h1 class="headline">Toasts</h1>
-
-                    <div>
-                        <button class="button raised" onclick="Ion.toast({text: 'Toast text', duration: 3000})">Toast button</button>
-                    </div>
-
-<pre class="line-numbers">
-<code class="language-javascript">Ion.toast({
-    text: "Toast text",
-    duration: 3000
-});
-</code>
-</pre>
-                </section>
-
-                <section id="tables">
+                <section id="tables" class="section">
                     <h1 class="headline">Tables</h1>
+
+                    <p>The tables display sets of similar data.</p>
 
                     <div>
                         <div class="responsive">
@@ -881,8 +806,7 @@
                     </div>
 
                     <div>
-<pre class="line-numbers">
-<code class="language-markup">&lt;div class=&quot;responsive&quot;&gt;
+<pre class="line-numbers"><code class="language-markup">&lt;div class=&quot;responsive&quot;&gt;
     &lt;table class=&quot;table&quot;&gt;
         &lt;tr&gt;
             &lt;th&gt;Dessert (100g serving)&lt;/th&gt;
@@ -933,14 +857,14 @@
             &lt;td&gt;98&lt;/td&gt;
         &lt;/tr&gt;
     &lt;/table&gt;
-&lt;/div&gt;
-</code>
-</pre>
+&lt;/div&gt;</code></pre>
                     </div>
                 </section>
 
-                <section id="tabs">
+                <section id="tabs" class="section">
                     <h1 class="headline">Tabs</h1>
+
+                    <p>Tabs allow switch between different views. They can be used to group content in segmented sections.</p>
 
                     <div class="box">
                         <nav class="tabs" data-tabs="tabs-content">
@@ -956,6 +880,8 @@
                         </div>
                     </div>
 
+                    <p>its use is basically the definition of the titles and of the contents of tabs and a call in javascript.</p>
+
                     <div>
                         <nav class="tabs" data-tabs="tabs-tabs">
                             <a class="tab" data-tab-id="tabs-html">HTML</a>
@@ -964,8 +890,7 @@
 
                         <div id="tabs-tabs" class="tabs-content">
                             <section id="tabs-html">
-<pre class="line-numbers">
-<code class="language-markup">&lt;nav class=&quot;tabs&quot; data-tabs=&quot;tabs-content&quot;&gt;
+<pre class="line-numbers"><code class="language-markup">&lt;nav class=&quot;tabs&quot; data-tabs=&quot;tabs-content&quot;&gt;
     &lt;a class=&quot;tab&quot; data-tab-id=&quot;tab-1&quot;&gt;TAB 1&lt;/a&gt;
     &lt;a class=&quot;tab&quot; data-tab-id=&quot;tab-2&quot;&gt;TAB 2&lt;/a&gt;
     &lt;a class=&quot;tab&quot; data-tab-id=&quot;tab-3&quot;&gt;TAB 2&lt;/a&gt;
@@ -975,23 +900,20 @@
     &lt;section id=&quot;tab-1&quot;&gt;Content of tab 1&lt;/section&gt;
     &lt;section id=&quot;tab-2&quot;&gt;Content of tab 2&lt;/section&gt;
     &lt;section id=&quot;tab-3&quot;&gt;Content of tab 3&lt;/section&gt;
-&lt;/div&gt;
-</code>
-</pre>
+&lt;/div&gt;</code></pre>
                             </section>
                             <section id="tabs-javascript">
-<pre class="line-numbers">
-<code class="language-javascript">Ion.get(".tabs").tabs();
-</code>
-</pre>
+<pre class="line-numbers"><code class="language-javascript">Ion.get(".tabs").tabs();</code></pre>
                             </section>
                         </div>
                     </div>
 
                 </section>
 
-                <section id="text-fields">
+                <section id="text-fields" class="section">
                     <h1 class="headline">Text fields</h1>
+
+                    <p>The text fields allow the user input, edit and select text.</p>
 
                     <div>
                         <div class="row">
@@ -1016,8 +938,7 @@
                     </div>
 
                     <div>
-<pre class="line-numbers">
-<code class="language-markup">&lt;div class=&quot;row&quot;&gt;
+<pre class="line-numbers"><code class="language-markup">&lt;div class=&quot;row&quot;&gt;
     &lt;div class=&quot;col&quot;&gt;
 
         &lt;div class=&quot;text-field&quot;&gt;
@@ -1039,12 +960,11 @@
         &lt;/div&gt;
 
     &lt;/div&gt;
-&lt;/div&gt;
-</code>
-</pre>
+&lt;/div&gt;</code></pre>
                     </div>
                     
                     <h2 class="title">Searchbar fixed</h2>
+                    <p>The searchbars are an type of text fields for search by input. The searchbar fixed is hidden until user action.</p>
                     
                     <div>
                         <div class="searchbar fixed">
@@ -1057,19 +977,17 @@
                     </div>
 
                     <div>
-<pre class="line-numbers">
-<code class="language-markup">&lt;div class=&quot;searchbar fixed&quot;&gt;
+<pre class="line-numbers"><code class="language-markup">&lt;div class=&quot;searchbar fixed&quot;&gt;
     &lt;div class=&quot;search-field&quot;&gt;
         &lt;i class=&quot;icon&quot;&gt;&amp;#xE8B6;&lt;/i&gt;
         &lt;input type=&quot;search&quot; placeholder=&quot;Pesquisar&quot; /&gt;
         &lt;span&gt;&lt;/span&gt;
     &lt;/div&gt;
-&lt;/div&gt;
-</code>
-</pre>
+&lt;/div&gt;</code></pre>
                     </div>
 
                     <h2 class="title">Searchbar centered</h2>
+                    <p>The searchbar centered is ideal for toolbars.</p>
 
                     <div>
                         <div class="searchbar centered">
@@ -1080,17 +998,31 @@
                 </section>
 
                 <div>
-<pre class="line-numbers">
-<code class="language-markup">&lt;div class=&quot;searchbar centered&quot;&gt;
+<pre class="line-numbers"><code class="language-markup">&lt;div class=&quot;searchbar centered&quot;&gt;
     &lt;i class=&quot;icon&quot;&gt;&amp;#xE8B6;&lt;/i&gt;
     &lt;input type=&quot;search&quot; placeholder=&quot;Pesquisar&quot; /&gt;
-&lt;/div&gt;
-</code>
-</pre>
+&lt;/div&gt;</code></pre>
                 </div>
 
-                <section id="toolbars">
+                <section id="toasts" class="section">
+                    <h1 class="headline">Toasts</h1>
+
+                    <p>The toasts provides a brief message feedback about an operation or task.</p>
+
+                    <div>
+                        <button class="button raised" onclick="Ion.toast({text: 'Toast text', duration: 3000})">Toast button</button>
+                    </div>
+
+<pre class="line-numbers"><code class="language-javascript">Ion.toast({
+    text: "Toast text",
+    duration: 3000
+});</code></pre>
+                </section>
+
+                <section id="toolbars" class="section">
                     <h1 class="headline">Toolbar</h1>
+
+                    <p>Toolbar can group quick actions for the user. They appear above the view, can be static or fixed.</p>
 
                     <div>
                         <header class="toolbar light-blue-500">
@@ -1108,8 +1040,7 @@
                     </div>
 
                     <div>
-<pre class="line-numbers">
-<code class="language-markup">&lt;header class=&quot;toolbar light-blue-500&quot;&gt;
+<pre class="line-numbers"><code class="language-markup">&lt;header class=&quot;toolbar light-blue-500&quot;&gt;
     &lt;a class=&quot;radial&quot; onclick=&quot;Ion.navbar.show()&quot;&gt;&lt;i class=&quot;icon&quot;&gt;&amp;#xE5D2;&lt;/i&gt;&lt;/a&gt;
 
     &lt;div class=&quot;flex&quot;&gt;
@@ -1120,34 +1051,29 @@
     &lt;/div&gt;
     
     &lt;a class=&quot;radial&quot;&gt;&lt;i class=&quot;icon&quot;&gt;&amp;#xE029;&lt;/i&gt;&lt;/a&gt;
-&lt;/header&gt;
-</code>
-</pre>
+&lt;/header&gt;</code></pre>
                     </div>
                 </section>
 
-                <section id="tooltips">
+                <section id="tooltips" class="section">
                     <h1 class="headline">Tooltips</h1>
 
-                    <p>Tooltips ajudam a esclarecer o objetivo de outros componenetes da página com textos descritivos ao passar o mouse sobre ele.</p>
+                    <p>Tooltips help clarify the purpose of other components of the page with descriptive texts by action of user.</p>
                     <div>
                         <button class="button raised" data-tooltip="Tooltip text bottom">Tooltip bottom</button>
                         <button class="button raised" data-tooltip="Tooltip text top" data-position="top">Tooltip top</button>
                         <button class="button raised" data-tooltip="Tooltip text left" data-position="left">Tooltip left</button>
                         <button class="button raised" data-tooltip="Tooltip text right" data-position="right">Tooltip right</button>
                     </div>
-                    <p>O atributo <code class="language-markup">data-position</code> muda a posição do tooltip, por padrão esse atributo tem o valor "bottom", e <code class="language-markup">data-tooltip</code> é o label do elemento.</p>
+                    <p>The attribute <code class="language-markup">data-position</code> changes the position of tooltip, by default this attribute has the value "bottom", and <code class="language-markup">data-tooltip</code> is the description text of an element.</p>
                 
-<pre class="line-numbers">
-<code class="language-markup">&lt;button class=&quot;button raised&quot; data-tooltip=&quot;Tooltip text bottom&quot;&gt;Tooltip bottom&lt;/button&gt;
+<pre class="line-numbers"><code class="language-markup">&lt;button class=&quot;button raised&quot; data-tooltip=&quot;Tooltip text bottom&quot;&gt;Tooltip bottom&lt;/button&gt;
 
 &lt;button class=&quot;button raised&quot; data-tooltip=&quot;Tooltip text top&quot; data-position=&quot;top&quot;&gt;Tooltip top&lt;/button&gt;
 
 &lt;button class=&quot;button raised&quot; data-tooltip=&quot;Tooltip text left&quot; data-position=&quot;left&quot;&gt;Tooltip left&lt;/button&gt;
 
-&lt;button class=&quot;button raised&quot; data-tooltip=&quot;Tooltip text right&quot; data-position=&quot;right&quot;&gt;Tooltip right&lt;/button&gt;
-</code>
-</pre>
+&lt;button class=&quot;button raised&quot; data-tooltip=&quot;Tooltip text right&quot; data-position=&quot;right&quot;&gt;Tooltip right&lt;/button&gt;</code></pre>
                 </section>
 
             </div>

@@ -10,12 +10,18 @@ pre[class*="language-"]{
 .logo-mini{
     opacity: 1;
     margin: 16px;
+    max-height: 32px;
     transform: scale(1);
-    max-height: calc(32px);
 }
 .logo-mini.hidden{
     opacity: 0;
     transform: scale(0.75);
+}
+
+@media (min-width: 1367px){
+    .navbar:not(.open) ~ .toolbar .logo-mini{
+        margin-left: 232px;
+    }
 }
 
 /* Ion */
@@ -29,10 +35,33 @@ pre[class*="language-"]{
     opacity: 0;
     transform: rotate(1800deg) scale(0.75);
 }
+#ion .intro{
+    padding: 0 16px;
+}
+#ion figure{
+    margin: 16px;
+}
+.github{
+    color: #FFFFFF;
+}
+.github svg{
+    width: 32px;
+    height: 32px;
+    fill: currentColor;
+}
+#ion .nav{
+    padding: 16px;
+}
+#ion video{
+    padding: 12.5% 0 12.5% 0;
+}
 
 @media (max-width: 960px){
     .logo{
         margin: 0px;
+    }
+    .github{
+        display: block !important;
     }
 }
 
@@ -42,6 +71,12 @@ pre[class*="language-"]{
 }
 #features .col-4 img{
     width: 100%;
+}
+
+@media (max-width: 960px){
+    #features .icon{
+        font-size: 96px;
+    }
 }
 
 @media (min-width: 961px){
