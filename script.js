@@ -6,21 +6,38 @@ css = [
     "style.css"
 ];
 
-document.body.style.display = "none";
+for(let i = 0; i < css.length; i = i + 1){
+    var link = document.createElement("link");
+    link.href = css[i];
+    link.type = "text/css";
+    link.rel = "stylesheet";
+
+    Ion.get("head").append(link);
+}
 
 window.onload = function(){
-    var i = 0;
-    
-    for(; i < css.length; i = i + 1){
-        var link = document.createElement("link");
-        link.href = css[i];
-        link.type = "text/css";
-        link.rel = "stylesheet";
+    checkStyleSheets();
+}
 
-        Ion.get("head").append(link);
-    }
+function checkStyleSheets(){
+    var i, loaded = false;
 
-    setTimeout(function(){document.body.style.display = "block";});
+    var interval = setInterval(function(){
+        for(i = 0; i < document.styleSheets.length; i = i + 1){
+            if(document.styleSheets[i].cssRules.length){
+                loaded = true;
+            }
+            else{
+                loaded = false;
+                break;
+            }
+        }
+
+        if(loaded){
+            clearInterval(interval);
+            document.body.classList.remove("loading");
+        }
+    }, 100);
 }
 
 Ion.get(document).on("scroll", function(){
