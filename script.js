@@ -12,7 +12,7 @@ for(let i = 0; i < css.length; i = i + 1){
     link.type = "text/css";
     link.rel = "stylesheet";
 
-    Ion.get("head").append(link);
+    document.querySelector("HEAD").appendChild(link);
 }
 
 window.onload = function(){
