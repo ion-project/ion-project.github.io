@@ -1,9 +1,9 @@
 var currentSection = "", css;
 
 css = [
-    "ion/ion.min.css",
-    "highlight/style.css",
-    "style.css"
+    "/ion/ion.min.css",
+    "/highlight/style.css",
+    "/style.css"
 ];
 
 for(let i = 0; i < css.length; i = i + 1){
