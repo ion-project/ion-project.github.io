@@ -16,6 +16,8 @@ for(let i = 0; i < css.length; i = i + 1){
 }
 
 window.onload = function(){
+    checkStyleSheets();
+    
     Ion.get(document).on("scroll", function(){
         var scroll = document.body.scrollTop || document.documentElement.scrollTop,
             logo = Ion.get(".logo"),
@@ -61,9 +63,9 @@ window.onload = function(){
         limit: 4,
         minlengthSearch: 2
     });
-};
+}
 
-(function(){
+function checkStyleSheets(){
     var i, loaded = false;
 
     var interval = setInterval(function(){
@@ -79,9 +81,7 @@ window.onload = function(){
 
         if(loaded){
             clearInterval(interval);
-            setTimeout(function(){
-                document.body.classList.remove("loading");
-            }, 100);
+            document.body.classList.remove("loading");
         }
     }, 10);
-})();
+}
