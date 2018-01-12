@@ -15,9 +15,9 @@ for(let i = 0; i < css.length; i = i + 1){
     document.querySelector("HEAD").appendChild(link);
 }
 
-window.onload = function(){
-    checkStyleSheets();
+checkStyleSheets();
 
+window.onload = function(){
     Ion.get(document).on("scroll", function(){
         var scroll = document.body.scrollTop || document.documentElement.scrollTop,
             logo = Ion.get(".logo"),
