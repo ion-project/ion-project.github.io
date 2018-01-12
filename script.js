@@ -15,8 +15,6 @@ for(let i = 0; i < css.length; i = i + 1){
     document.querySelector("HEAD").appendChild(link);
 }
 
-checkStyleSheets();
-
 window.onload = function(){
     Ion.get(document).on("scroll", function(){
         var scroll = document.body.scrollTop || document.documentElement.scrollTop,
@@ -63,9 +61,9 @@ window.onload = function(){
         limit: 4,
         minlengthSearch: 2
     });
-}
+};
 
-function checkStyleSheets(){
+(function(){
     var i, loaded = false;
 
     var interval = setInterval(function(){
@@ -81,7 +79,9 @@ function checkStyleSheets(){
 
         if(loaded){
             clearInterval(interval);
-            document.body.classList.remove("loading");
+            setTimeout(function(){
+                document.body.classList.remove("loading");
+            }, 100);
         }
     }, 10);
-}
+})();
