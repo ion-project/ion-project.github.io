@@ -138,3 +138,13 @@ pre[class*="language-"]{
 #color ul li .hex{
     float: right;
 }
+
+/* About */
+#about .nav{
+    padding: 32px 16px 16px 16px;
+}
+.author img{
+    max-height: 120px;
+    margin-right: 1em;
+    border-radius: 50%;
+}
