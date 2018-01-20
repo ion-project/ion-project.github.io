@@ -59,7 +59,7 @@
                     </div>
                 </li>
                 <a href="/javascript"><li class="item ripple">Javascript</li></a>
-                <li class="item ripple">About</li>
+                <a href="/about"><li class="item ripple">About</li></a>
             </ul>
         </aside>
         
@@ -1088,14 +1088,17 @@
 
             <footer>
                 <div class="box center">
-                    Copyright © 2016-2017 Ion
+                    Copyright © 2016-2018 Ion
                 </div>
             </footer>
 
         </main>
     </body>
 
-    <script src="/ion/ion.min.js"></script>
-    <script src="/highlight/index.js"></script>
-    <script src="/script.js"></script>
+    <script src="/ion/ion.min.js" id="ion-script" async></script>
+    <script src="/highlight/index.js" async></script>
+    <script src="/script.min.js" async></script>
+    <script>
+        document.getElementById("ion-script").onload=function(){Ion.get(".chips").chips({placeholder:"Add a contact",autocomplete:[{text:"Autocomplete contact",subtitle:"Contact",img:"/img/avatar.jpg"},{text:"John Doe",subtitle:"johndoe@email.com",img:"/img/avatar.jpg"},{text:"Test",subtitle:"Test contact",img:"/img/avatar.jpg"},{text:"Contact2",subtitle:"contact2@email.com",img:"/img/avatar.jpg"},{text:"Deletable contact",subtitle:"deletable",img:"/img/avatar.jpg",deletable:!0}],limit:4,minlengthSearch:2})};
+    </script>
 </html>
