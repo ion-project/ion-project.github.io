@@ -1,4 +1,4 @@
-var currentSection = "", css;
+var currentSection = "", css, cssLoaded = 0;
 
 css = [
     "/ion/ion.min.css",
@@ -7,16 +7,7 @@ css = [
 ];
 
 window.onload = function(){
-    for(let i = 0; i < css.length; i = i + 1){
-        var link = document.createElement("link");
-        link.href = css[i];
-        link.type = "text/css";
-        link.rel = "stylesheet";
-    
-        document.querySelector("HEAD").appendChild(link);
-    }
-    
-    checkStyleSheets();
+    loadStyleSheets();
 
     Ion.get(document).on("scroll", function(){
         Ion.get(".section").each(function(){
@@ -30,23 +21,25 @@ window.onload = function(){
     Ion.get(".tabs").tabs();
 }
 
+function loadStyleSheets(){
+    for(let i = 0; i < css.length; i = i + 1){
+        var link = document.createElement("link");
+        link.href = css[i];
+        link.type = "text/css";
+        link.rel = "stylesheet";
+    
+        document.querySelector("HEAD").appendChild(link);
+
+        link.onload = function(){
+            checkStyleSheets();
+        }
+    }
+}
+
 function checkStyleSheets(){
-    var i, loaded = false;
+    cssLoaded = cssLoaded + 1;
 
-    var interval = setInterval(function(){
-        for(i = 0; i < document.styleSheets.length; i = i + 1){
-            if(document.styleSheets[i].cssRules.length){
-                loaded = true;
-            }
-            else{
-                loaded = false;
-                break;
-            }
-        }
-
-        if(loaded){
-            clearInterval(interval);
-            document.body.classList.remove("loading");
-        }
-    }, 10);
+    if(cssLoaded >= css.length){
+        document.body.classList.remove("loading");
+    }
 }
