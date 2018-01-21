@@ -6,16 +6,16 @@ css = [
     "/style.min.css"
 ];
 
-for(let i = 0; i < css.length; i = i + 1){
-    var link = document.createElement("link");
-    link.href = css[i];
-    link.type = "text/css";
-    link.rel = "stylesheet";
-
-    document.querySelector("HEAD").appendChild(link);
-}
-
 window.onload = function(){
+    for(let i = 0; i < css.length; i = i + 1){
+        var link = document.createElement("link");
+        link.href = css[i];
+        link.type = "text/css";
+        link.rel = "stylesheet";
+    
+        document.querySelector("HEAD").appendChild(link);
+    }
+    
     checkStyleSheets();
 
     Ion.get(document).on("scroll", function(){
