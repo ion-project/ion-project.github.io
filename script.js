@@ -1,10 +1,10 @@
 var currentSection = "", css, cssLoaded = 0;
 
-css = [
-    "/ion/ion.min.css",
-    "/highlight/style.css",
-    "/style.min.css"
-];
+// css = [
+//     "/ion/ion.min.css",
+//     "/highlight/style.css",
+//     "/style.min.css"
+// ];
 
 window.onload = function(){
     loadStyleSheets();
@@ -40,6 +40,6 @@ function checkStyleSheets(){
     cssLoaded = cssLoaded + 1;
 
     if(cssLoaded >= css.length){
-        document.body.classList.remove("loading");
+        // document.body.classList.remove("loading");
     }
 }
