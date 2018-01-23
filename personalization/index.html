@@ -10,27 +10,12 @@
         <link href="/favicon.ico" type="image/x-icon" rel="icon shortcut" />
     
         <style>
-            body.loading{
-                opacity: 0;
-                overflow-y: hidden;
-                pointer-events: none;
-                background-color: #FAFAFA;
-            }
-            .loading-spinner{
-                top: 50%;
-                left: 50%;
-                display: none;
-                position: fixed;
-                margin: -22px -22px;
-            }
-            body.loading .loading-spinner{
-                display: block;
-            }
+            body.loading{max-width:100%;pointer-events:none;background-color:#fafafa}body.loading,body.loading *{overflow-y:hidden}body.loading :not(.loading-spinner){opacity:0}.loading-spinner{top:50%;left:50%;display:none;position:fixed;margin:-22px}body.loading .loading-spinner{display:block}
         </style>
     </head>
     
     <body class="loading">
-        <img class="loading-spinner" src="img/material_spinner.gif" />
+        <img class="loading-spinner" src="../img/material_spinner.gif" />
 
         <aside class="navbar open">
             <ul class="list">
@@ -1551,8 +1536,6 @@
             </footer>
 
         </main>
-
-        <img class="loading-spinner" src="img/material_spinner.gif" />
     </body>
 
     <script src="/ion/ion.min.js" async></script>
