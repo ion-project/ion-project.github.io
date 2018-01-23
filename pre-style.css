@@ -1,0 +1,20 @@
+body.loading{
+    pointer-events: none;
+    background-color: #FAFAFA;
+}
+body.loading, body.loading *{
+    overflow-y: hidden;
+}
+body.loading *:not(.loading-spinner){
+    opacity: 0;
+}
+.loading-spinner{
+    top: 50%;
+    left: 50%;
+    display: none;
+    position: fixed;
+    margin: -22px -22px;
+}
+body.loading .loading-spinner{
+    display: block;
+}
