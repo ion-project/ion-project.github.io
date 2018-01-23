@@ -1,4 +1,4 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
     <head>
         <title>Ion</title>
@@ -6,7 +6,6 @@
         <meta charset="UTF-8" />
         <meta name="theme-color" content="#212121" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="Cache-Control" content="public, max-age=3600" />
 
         <link href="favicon.ico" type="image/x-icon" rel="icon shortcut" />
 
@@ -15,6 +14,17 @@
                 opacity: 0;
                 overflow-y: hidden;
                 pointer-events: none;
+                background-color: #FAFAFA;
+            }
+            .loading-spinner{
+                top: 50%;
+                left: 50%;
+                display: none;
+                position: fixed;
+                margin: -22px -22px;
+            }
+            body.loading .loading-spinner{
+                display: block;
             }
         </style>
     </head>
@@ -186,6 +196,8 @@
                 Copyright © 2016-2018 Ion
             </div>
         </footer>
+
+        <img class="loading-spinner" src="img/material_spinner.gif" />
     </body>
 
     <script src="ion/ion.min.js" id="ion-script" async></script>
