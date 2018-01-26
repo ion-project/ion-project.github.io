@@ -18,9 +18,7 @@ window.onload = function(){
                 history.pushState(null, null, window.location.pathname.replace(/\/$/, "") + "/#" + this.id)
             }
         });
-    });   
-    
-    Ion.get(".tabs").tabs();
+    });
 }
 
 function loadStyleSheets(){
@@ -43,5 +41,7 @@ function checkStyleSheets(){
 
     if(cssLoaded >= css.length){
         document.body.classList.remove("loading");
+        
+        Ion.get(".tabs").tabs();
     }
 }
