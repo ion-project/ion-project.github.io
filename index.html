@@ -186,7 +186,7 @@
     </body>
 
     <script src="ion/ion.min.js" id="ion-script" async></script>
-    <script src="script.min.js" async></script>
+    <script src="script.js" async></script>
     <script>
         document.getElementById("ion-script").onload=function(){Ion.get(document).on("scroll",function(){var b=document.body.scrollTop||document.documentElement.scrollTop,a=Ion.get(".logo"),c=Ion.get(".logo-mini");0<b?Ion.get(".toolbar.shadow-transition").removeClass("no-elevation"):Ion.get(".toolbar.shadow-transition").addClass("no-elevation");a[0]&&(0>a[0].offsetTop-b?(a.addClass("animated"),c.removeClass("hidden")):(a.removeClass("animated"),c.addClass("hidden")))})};
     </script>
