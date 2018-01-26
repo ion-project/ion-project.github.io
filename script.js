@@ -10,8 +10,10 @@ window.onload = function(){
     loadStyleSheets();
 
     Ion.get(document).on("scroll", function(){
+        var scroll = document.body.scrollTop || document.documentElement.scrollTop;
+        
         Ion.get(".section").each(function(){
-            if(this.id && this.id != currentSection && (this.offsetTop - scroll) < 60 && (this.offsetTop - scroll) > -60){
+            if(this.id && this.id != currentSection && (this.offsetTop - scroll) < 50 && (this.offsetTop - scroll) > -50){
                 currentSection = this.id;
                 history.pushState(null, null, window.location.pathname.replace(/\/$/, "") + "/#" + this.id)
             }
