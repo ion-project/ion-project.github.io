@@ -43,6 +43,7 @@ pre[class*="language-"]{
 }
 .github{
     color: #FFFFFF;
+    line-height: 0 !important;
 }
 .github svg{
     width: 32px;
